@@ -9,4 +9,4 @@ CMS.registerPreviewStyle("/styles.css");
 CMS.registerPreviewTemplate("home", HomePagePreview);
 CMS.registerPreviewTemplate("pricing", PricingPagePreview);
 CMS.registerPreviewTemplate("contact", ContactPagePreview);
-CMS.registerPreviewTemplate("blog", ArticlePreview);
+CMS.registerPreviewTemplate("portfolio", ArticlePreview);

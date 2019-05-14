@@ -119,9 +119,9 @@ collections:
               name: "meta_description",
               widget: "text",
             }
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "src/pages/portfolio"
     create: true
     slug: "{{slug}}"
     fields:
