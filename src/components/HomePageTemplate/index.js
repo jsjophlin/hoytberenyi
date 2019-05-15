@@ -8,6 +8,7 @@ import PropTypes from "prop-types";
 const HomePageTemplate = ({
   title,
   heading,
+  hero_image,
   description,
   offerings,
   meta_title,
@@ -27,6 +28,7 @@ const HomePageTemplate = ({
               <div className="section">
                 <h1 className="title">{title}</h1>
                 <p>{description}</p>
+                <img src={hero_image} />
               </div>
             </div>
           </div>
