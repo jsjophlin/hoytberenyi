@@ -41,11 +41,25 @@ export const pageQuery = graphql`
         meta_title
         meta_description
         heading
-        hero_image
+        hero_image {
+          childImageSharp {
+            fluid(maxWidth: 1075, quality: 72) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          publicURL
+        }
         description
         offerings {
           blurbs {
-            image
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1075, quality: 72) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+              publicURL
+            }
             text
           }
         }

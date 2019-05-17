@@ -4,6 +4,7 @@ import "../../assets/sass/homePageTemplate.sass";
 import Offerings from "../Offerings";
 import Testimonials from "../Testimonials";
 import PropTypes from "prop-types";
+import Img from "gatsby-image";
 
 const HomePageTemplate = ({
   title,
@@ -28,11 +29,13 @@ const HomePageTemplate = ({
               <div className="section">
                 <h1 className="title">{title}</h1>
                 <p>{description}</p>
-                <img src={hero_image} />
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="hero-background-image hero-home">
+        <Img fluid={hero_image.childImageSharp.fluid} />
       </div>
     </section>
     <section className="section section--gradient">
