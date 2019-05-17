@@ -23,7 +23,7 @@ module.exports = {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/src/assets/img`,
+        path: `${__dirname}/static/img`,
         name: "uploads"
       }
     },
@@ -37,13 +37,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/assets/img`,
-        name: "images"
-      }
-    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -51,10 +44,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-relative-images",
-            options: {
-              name: "uploads"
-            }
+            resolve: "gatsby-remark-relative-images"
           },
           {
             resolve: "gatsby-remark-images",
@@ -174,7 +164,15 @@ module.exports = {
                             frontmatter {
                               title
                               templateKey
-                              cover
+                              cover {
+                                fluid (maxWidth:500, quality:50){
+                                  src
+                                  srcSet
+                                  aspectRatio
+                                  sizes
+                                  base64
+                                }
+                              }
                               date(formatString: "MMMM DD, YYYY")
                               tags
                             }
