@@ -165,12 +165,14 @@ module.exports = {
                               title
                               templateKey
                               cover {
-                                fluid (maxWidth:500, quality:50){
-                                  src
-                                  srcSet
-                                  aspectRatio
-                                  sizes
-                                  base64
+                                childImageSharp {
+                                  fluid {
+                                    src
+                                    srcSet
+                                    aspectRatio
+                                    sizes
+                                    base64
+                                  }
                                 }
                               }
                               date(formatString: "MMMM DD, YYYY")
