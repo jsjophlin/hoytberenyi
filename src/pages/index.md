@@ -1,6 +1,6 @@
 ---
 templateKey: home-page
-title: Hoyt + Berenyi
+title: 'Development is Dynamic, is Your Engineer?'
 heading: Resourceful. Dependable. Results.
 hero_image: /img/hero_se-building.png
 description: Engineers & Consultants
