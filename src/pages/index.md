@@ -2,7 +2,7 @@
 templateKey: home-page
 title: Hoyt + Berenyi
 heading: Resourceful. Dependable. Results.
-hero_image: /img/david-martin-773326-unsplash.jpg
+hero_image: /img/hero_se-building.png
 description: Engineers & Consultants
 offerings:
   blurbs:
