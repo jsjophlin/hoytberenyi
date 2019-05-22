@@ -28,7 +28,6 @@ const HomePageTemplate = ({
             <div className="column is-10 is-offset-1">
               <div className="section">
                 <h1 className="title">{title}</h1>
-                <p>{description}</p>
               </div>
             </div>
           </div>
