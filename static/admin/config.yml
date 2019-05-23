@@ -20,6 +20,184 @@ collections:
               widget: "hidden",
               default: "home-page",
             }
+          - {
+              label: Hero,
+              name: hero,
+              widget: object,
+              fields:
+                [
+                  { label: "Hero Image", name: hero_image, widget: image },
+                  {
+                    label: "Hero Image alt",
+                    name: hero_image_alt,
+                    widget: string,
+                    optional: true,
+                  },
+                  {
+                    label: "Hero body",
+                    name: hero_body,
+                    widget: string,
+                    optional: true,
+                  },
+                ],
+            }
+          - {
+              label: "About section",
+              name: about_section,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "About heading",
+                    name: about_heading,
+                    widget: string,
+                  },
+                  { label: "About body", name: about_body, widget: string },
+                ],
+            }
+          - {
+              label: "Our Team section",
+              name: our_team_section,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "Our Team heading",
+                    name: our_team_heading,
+                    widget: string,
+                  },
+                  {
+                    label: Avatar,
+                    name: avatar,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Portrait, name: portrait, widget: image },
+                        { label: Caption, name: caption, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Secondary hero,
+              name: secondary_hero,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "Secondary Hero Image",
+                    name: secondary_hero_image,
+                    widget: image,
+                  },
+                  {
+                    label: "Secondary Hero Image alt",
+                    name: secondary_hero_image_alt,
+                    widget: string,
+                    optional: true,
+                  },
+                ],
+            }
+          - {
+              label: "Our Process section",
+              name: our_process_section,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "Our Process heading",
+                    name: our_process_heading,
+                    widget: string,
+                  },
+                  {
+                    label: "Our Process body",
+                    name: our_process_body,
+                    widget: string,
+                  },
+                  {
+                    label: "Our Process image",
+                    name: our_process_image,
+                    widget: image,
+                  },
+                ],
+            }
+          - {
+              label: "Our Services section",
+              name: our_services_section,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "Our Services heading",
+                    name: our_services_heading,
+                    widget: string,
+                  },
+                  {
+                    label: "Our Services body",
+                    name: our_services_body,
+                    widget: string,
+                  },
+                  {
+                    label: "Our Services list",
+                    name: our_services_list,
+                    widget: list,
+                  },
+                ],
+            }
+          - {
+              label: Tertiary hero,
+              name: tertiary_hero,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "Tertiary Hero Image",
+                    name: tertiary_hero_image,
+                    widget: image,
+                  },
+                  {
+                    label: "Tertiary Hero Image alt",
+                    name: tertiary_hero_image_alt,
+                    widget: string,
+                    optional: true,
+                  },
+                ],
+            }
+          - {
+              label: "Project section",
+              name: project_section,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: "Project heading",
+                    name: project_heading,
+                    widget: string,
+                  },
+                  {
+                    label: Project,
+                    name: project,
+                    widget: list,
+                    fields:
+                      [
+                        {
+                          label: "Project image",
+                          name: project_image,
+                          widget: image,
+                        },
+                        {
+                          label: "Project image alt",
+                          name: project_image_alt,
+                          widget: string,
+                        },
+                        {
+                          label: "Project details",
+                          name: project_details,
+                          widget: string,
+                        },
+                      ],
+                  },
+                ],
+            }
           - { label: Title, name: title, widget: string }
           - { label: Heading, name: heading, widget: string }
           - { label: "Hero Image", name: hero_image, widget: image }
