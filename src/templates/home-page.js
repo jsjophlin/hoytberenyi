@@ -9,16 +9,7 @@ const HomePage = ({ data }) => {
 
   return (
     <Layout>
-      <HomePageTemplate
-        title={frontmatter.title}
-        meta_title={frontmatter.meta_title}
-        meta_description={frontmatter.meta_description}
-        heading={frontmatter.heading}
-        hero_image={frontmatter.hero_image}
-        description={frontmatter.description}
-        offerings={frontmatter.offerings}
-        testimonials={frontmatter.testimonials}
-      />
+      <HomePageTemplate hero_body={frontmatter.hero.hero_body} />
     </Layout>
   );
 };
@@ -37,35 +28,8 @@ export const pageQuery = graphql`
   query IndexPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
-        title
-        meta_title
-        meta_description
-        heading
-        hero_image {
-          childImageSharp {
-            fluid(maxWidth: 1075, quality: 72) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-          publicURL
-        }
-        description
-        offerings {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 1075, quality: 72) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-              publicURL
-            }
-            text
-          }
-        }
-        testimonials {
-          author
-          quote
+        hero {
+          hero_body
         }
       }
     }
