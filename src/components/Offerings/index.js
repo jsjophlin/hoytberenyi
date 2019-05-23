@@ -7,7 +7,7 @@ const Offerings = ({ gridItems }) => (
     {gridItems.map((item, index) => (
       <div key={index} className="column is-6" style={{ borderRadius: "5px" }}>
         <section className="section">
-          <Img fluid={item.image.childImageSharp.fluid} />
+          <img src={item.image} />
           <p>{item.text}</p>
         </section>
       </div>
@@ -18,7 +18,7 @@ const Offerings = ({ gridItems }) => (
 Offerings.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
-      image: PropTypes.object,
+      image: PropTypes.string,
       text: PropTypes.string
     })
   )
