@@ -52,7 +52,7 @@ collections:
                     name: about_heading,
                     widget: string,
                   },
-                  { label: "About body", name: about_body, widget: string },
+                  { label: "About body", name: about_body, widget: markdown },
                 ],
             }
           - {
@@ -111,7 +111,7 @@ collections:
                   {
                     label: "Our Process body",
                     name: our_process_body,
-                    widget: string,
+                    widget: markdown,
                   },
                   {
                     label: "Our Process image",
@@ -134,12 +134,12 @@ collections:
                   {
                     label: "Our Services body",
                     name: our_services_body,
-                    widget: string,
+                    widget: markdown,
                   },
                   {
                     label: "Our Services list",
                     name: our_services_list,
-                    widget: list,
+                    widget: markdown,
                   },
                 ],
             }
@@ -192,7 +192,7 @@ collections:
                         {
                           label: "Project details",
                           name: project_details,
-                          widget: string,
+                          widget: markdown,
                         },
                       ],
                   },
