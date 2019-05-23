@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql, StaticQuery } from "gatsby";
 import SearchBox from "../SearchBox";
-import siteLogo from "../../assets/img/site-logo.png";
+import siteLogo from "../../assets/img/site_logo.png";
 
 const NavBar = ({ toggleNavbar, isActive }) => (
   <StaticQuery
@@ -16,7 +16,6 @@ const NavBar = ({ toggleNavbar, isActive }) => (
       <nav className="navbar is-fixed-top" aria-label="main navigation">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item">
-            {/* <strong>Hoyt + Berenyi</strong> */}
             <img src={siteLogo} />
           </Link>
           <button
