@@ -37,14 +37,11 @@ const HomePagePreview = ({ entry, getAsset }) => {
   const entryProject = entry.getIn(["data", "project"]);
   const project = entryProject ? entryProject.toJS() : [];
 
-  const entryBlurbs = entry.getIn(["data", "offerings", "blurbs"]);
-  const blurbs = entryBlurbs ? entryBlurbs.toJS() : [];
-
-  const entryTestimonials = entry.getIn(["data", "testimonials"]);
-  const testimonials = entryTestimonials ? entryTestimonials.toJS() : [];
-
   return (
     <HomePageTemplate
+      title={entry.getIn(["data", "title"])}
+      meta_title={entry.getIn(["data", "meta_title"])}
+      meta_description={entry.getIn(["data", "meta_description"])}
       hero={hero}
       aboutSection={aboutSection}
       ourTeamSection={ourTeamSection}
@@ -56,14 +53,6 @@ const HomePagePreview = ({ entry, getAsset }) => {
       projectSection={projectSection}
       avatar={avatar}
       project={project}
-      title={entry.getIn(["data", "title"])}
-      meta_title={entry.getIn(["data", "meta_title"])}
-      hero_image={entry.getIn(["data", "hero_image"])}
-      meta_description={entry.getIn(["data", "meta_description"])}
-      heading={entry.getIn(["data", "heading"])}
-      description={entry.getIn(["data", "description"])}
-      offerings={{ blurbs }}
-      testimonials={testimonials}
     />
   );
 };
