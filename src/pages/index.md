@@ -2,7 +2,7 @@
 templateKey: home-page
 title: 'Development is Dynamic, is your Engineer?'
 heading: Resourceful. Dependable. Results.
-hero_image: /img/hero_se-building.png
+hero_image: /img/hero_se.jpg
 description: Engineers & Consultants
 offerings:
   blurbs:
