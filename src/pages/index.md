@@ -101,7 +101,7 @@ project_section:
       project_image: /img/portfolio_3.jpg
       project_image_alt: Project 3
   project_heading: Projects
-title: 'Development is Dynamic, is your Engineer?'
+title: Hoyt + Berenyi
 heading: Resourceful. Dependable. Results.
 hero_image: /img/hero_se.jpg
 description: Engineers & Consultants
@@ -168,7 +168,7 @@ testimonials:
       Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
       dignissim ligula.  Lorem ipsum dolor sit amet, consectetur adipiscing
       elit.
-meta_title: Home | Gatsby Starter Business
+meta_title: Home | Hoyt + Berenyi
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
