@@ -53,13 +53,15 @@ const HomePageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column is-one-quarter">
               <div className="content">
                 <h3 className="has-text-weight-semibold is-size-2">
                   {aboutHeading}
                 </h3>
-                <p>{aboutBody}</p>
               </div>
+            </div>
+            <div className="column is-three-quarters">
+              <p>{aboutBody}</p>
             </div>
           </div>
         </div>
@@ -69,28 +71,30 @@ const HomePageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column is-one-quarter">
               <div className="content">
                 <h3 className="has-text-weight-semibold is-size-2">
                   {ourTeamHeading}
                 </h3>
-                <ul>
-                  {avatar.map((item, index) => (
-                    <li key={index}>
-                      <figure>
-                        <Img fixed={item.portrait.childImageSharp.fixed} />
-                        <figcaption>{item.caption}</figcaption>
-                      </figure>
-                    </li>
-                  ))}
-                </ul>
               </div>
+            </div>
+            <div className="column is-three-quarters">
+              <ul className="columns is-multiline">
+                {avatar.map((item, index) => (
+                  <li key={index} className="column is-one-third">
+                    <figure className={`content item-` + index}>
+                      <Img fluid={item.portrait.childImageSharp.fluid} />
+                      <figcaption>{item.caption}</figcaption>
+                    </figure>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section className="hero is-primary is-bold is-medium">
+    <section className="hero is-clipped is-primary is-bold is-medium">
       <div className="hero-body">
         <div className="container">
           <div className="columns">
@@ -113,9 +117,13 @@ const HomePageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column is-half">
               <div className="content">
                 <Img fluid={ourProcessImage.childImageSharp.fluid} />
+              </div>
+            </div>
+            <div className="column is-half">
+              <div className="content">
                 <h3 className="has-text-weight-semibold is-size-2">
                   {ourProcessHeading}
                 </h3>
@@ -143,7 +151,7 @@ const HomePageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="hero is-primary is-bold is-medium">
+    <section className="hero is-clipped is-primary is-bold is-medium">
       <div className="hero-body">
         <div className="container">
           <div className="columns">
@@ -171,19 +179,41 @@ const HomePageTemplate = ({
                 <h3 className="has-text-weight-semibold is-size-2">
                   {projectHeading}
                 </h3>
-                <ul>
-                  {projects.map((item, index) => (
-                    <li key={index}>
-                      <figure>
-                        <Img
-                          fluid={item.project_image.childImageSharp.fluid}
-                          alt={item.project_image_alt}
-                        />
-                        <figcaption>{item.project_details}</figcaption>
-                      </figure>
-                    </li>
-                  ))}
-                </ul>
+                <div className="tile is-ancestor">
+                  {projects.map((item, index) => {
+                    let innerTile;
+
+                    if (index === 0 || index === 1) {
+                      innerTile = (
+                        <div
+                          key={index}
+                          className={`tile is-` + (index === 0 ? `4` : `6`)}
+                        >
+                          <figure className={`content item-` + index}>
+                            <Img
+                              fluid={item.project_image.childImageSharp.fluid}
+                              alt={item.project_image_alt}
+                            />
+                            <figcaption>{item.project_details}</figcaption>
+                          </figure>
+                        </div>
+                      );
+                    } else {
+                      innerTile = (
+                        <div key={index} className="tile is-3">
+                          <figure className={`content item-` + index}>
+                            <Img
+                              fluid={item.project_image.childImageSharp.fluid}
+                              alt={item.project_image_alt}
+                            />
+                            <figcaption>{item.project_details}</figcaption>
+                          </figure>
+                        </div>
+                      );
+                    }
+                    return innerTile;
+                  })}
+                </div>
               </div>
             </div>
           </div>

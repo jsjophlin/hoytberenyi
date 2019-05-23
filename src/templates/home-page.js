@@ -79,8 +79,8 @@ export const pageQuery = graphql`
             caption
             portrait {
               childImageSharp {
-                fixed(width: 400, quality: 72) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 400, quality: 72) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
