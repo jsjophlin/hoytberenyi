@@ -43,6 +43,9 @@ const HomePagePreview = ({ entry, getAsset }) => {
   const entryProject3 = entry.getIn(["data", "project_3"]);
   const project3 = entryProject ? entryProject.toJS() : [];
 
+  const entryProject4 = entry.getIn(["data", "project_4"]);
+  const project4 = entryProject ? entryProject.toJS() : [];
+
   return (
     <HomePageTemplate
       title={entry.getIn(["data", "title"])}
@@ -61,6 +64,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
       project1={project1}
       project2={project2}
       project3={project3}
+      project4={project4}
     />
   );
 };

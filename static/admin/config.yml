@@ -243,6 +243,29 @@ collections:
                         },
                       ],
                   },
+                  {
+                    label: Project Four,
+                    name: project_4,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Project image",
+                          name: project_image_4,
+                          widget: image,
+                        },
+                        {
+                          label: "Project image alt",
+                          name: project_image_alt_4,
+                          widget: string,
+                        },
+                        {
+                          label: "Project details",
+                          name: project_details_4,
+                          widget: markdown,
+                        },
+                      ],
+                  },
                 ],
             }
           - { label: "Meta Title", name: "meta_title", widget: "string" }
