@@ -13,7 +13,7 @@ const HomePage = ({ data }) => {
         title={frontmatter.title}
         metaTitle={frontmatter.meta_title}
         metaDescription={frontmatter.meta_description}
-        heroBody={frontmatter.hero.hero_body}
+        heroBody={frontmatter.hero.hero_content}
         heroImageAlt={frontmatter.hero.hero_image_alt}
         heroImage={frontmatter.hero.hero_image}
         aboutHeading={frontmatter.about_section.about_heading}
@@ -59,7 +59,7 @@ export const pageQuery = graphql`
         meta_title
         meta_description
         hero {
-          hero_body
+          hero_content
           hero_image_alt
           hero_image {
             childImageSharp {

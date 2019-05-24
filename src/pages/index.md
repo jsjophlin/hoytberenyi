@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 hero:
-  hero_body: 'Development is Dynamic, is your Engineer?'
+  hero_content: 'Development is Dynamic, is your Engineer?'
   hero_image: /img/hero_se.jpg
   hero_image_alt: Primary Hero
 about_section:

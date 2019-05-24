@@ -35,8 +35,8 @@ collections:
                     optional: true,
                   },
                   {
-                    label: "Hero body",
-                    name: hero_body,
+                    label: "Hero content",
+                    name: hero_content,
                     widget: string,
                     optional: true,
                   },
@@ -49,11 +49,11 @@ collections:
               fields:
                 [
                   {
-                    label: "About heading",
+                    label: "Heading",
                     name: about_heading,
                     widget: string,
                   },
-                  { label: "About body", name: about_body, widget: markdown },
+                  { label: "Body", name: about_body, widget: markdown },
                 ],
             }
           - {
@@ -63,7 +63,7 @@ collections:
               fields:
                 [
                   {
-                    label: "Our Team heading",
+                    label: "Heading",
                     name: our_team_heading,
                     widget: string,
                   },
@@ -99,23 +99,23 @@ collections:
                 ],
             }
           - {
-              label: "Our Process section",
+              label: "Our Processes section",
               name: our_process_section,
               widget: object,
               fields:
                 [
                   {
-                    label: "Our Process heading",
+                    label: "Heading",
                     name: our_process_heading,
                     widget: string,
                   },
                   {
-                    label: "Our Process body",
+                    label: "Body",
                     name: our_process_body,
                     widget: markdown,
                   },
                   {
-                    label: "Our Process image",
+                    label: "Our Processes image",
                     name: our_process_image,
                     widget: image,
                   },
@@ -128,12 +128,12 @@ collections:
               fields:
                 [
                   {
-                    label: "Our Services heading",
+                    label: "Heading",
                     name: our_services_heading,
                     widget: string,
                   },
                   {
-                    label: "Our Services body",
+                    label: "Body",
                     name: our_services_body,
                     widget: markdown,
                   },
@@ -170,7 +170,7 @@ collections:
               fields:
                 [
                   {
-                    label: "Projects heading",
+                    label: "Heading",
                     name: projects_heading,
                     widget: string,
                   },
