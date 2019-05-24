@@ -1,6 +1,5 @@
 import React from "react";
 import Helmet from "react-helmet";
-import "../../assets/sass/homePageTemplate.sass";
 import PropTypes from "prop-types";
 import Img from "gatsby-image";
 
@@ -26,10 +25,7 @@ const HomePageTemplate = ({
   tertiaryHeroImage,
   tertiaryHeroImageAlt,
   projectHeading,
-  project1,
-  project2,
-  project3,
-  project4
+  projects
 }) => (
   <div>
     <Helmet>
@@ -187,33 +183,45 @@ const HomePageTemplate = ({
                   <div className="tile is-vertical">
                     <div className="tile is-child">
                       <Img
-                        fluid={project1.project_image_1.childImageSharp.fluid}
-                        alt={project1.project_image_alt_1}
+                        fluid={
+                          projects.project1.project_image_1.childImageSharp
+                            .fluid
+                        }
+                        alt={projects.project1.project_image_alt_1}
                       />
-                      <p>{project1.project_details_1}</p>
+                      <p>{projects.project1.project_details_1}</p>
                     </div>
                     <div className="tile is-child">
                       <Img
-                        fluid={project2.project_image_2.childImageSharp.fluid}
-                        alt={project2.project_image_alt_2}
+                        fluid={
+                          projects.project2.project_image_2.childImageSharp
+                            .fluid
+                        }
+                        alt={projects.project2.project_image_alt_2}
                       />
-                      <p>{project2.project_details_2}</p>
+                      <p>{projects.project2.project_details_2}</p>
                     </div>
                   </div>
                   <div className="tile is-vertical">
                     <div className="tile is-child">
                       <Img
-                        fluid={project3.project_image_3.childImageSharp.fluid}
-                        alt={project3.project_image_alt_3}
+                        fluid={
+                          projects.project3.project_image_3.childImageSharp
+                            .fluid
+                        }
+                        alt={projects.project3.project_image_alt_3}
                       />
-                      <p>{project3.project_details_3}</p>
+                      <p>{projects.project3.project_details_3}</p>
                     </div>
                     <div className="tile is-child">
                       <Img
-                        fluid={project4.project_image_4.childImageSharp.fluid}
-                        alt={project4.project_image_alt_4}
+                        fluid={
+                          projects.project4.project_image_4.childImageSharp
+                            .fluid
+                        }
+                        alt={projects.project4.project_image_alt_4}
                       />
-                      <p>{project4.project_details_4}</p>
+                      <p>{projects.project4.project_details_4}</p>
                     </div>
                   </div>
                 </div>
@@ -248,10 +256,7 @@ HomePageTemplate.propTypes = {
   tertiaryHeroImage: PropTypes.object,
   tertiaryHeroImageAlt: PropTypes.string,
   projectHeading: PropTypes.string,
-  project1: PropTypes.object,
-  project2: PropTypes.object,
-  project3: PropTypes.object,
-  project4: PropTypes.object
+  projects: PropTypes.object
 };
 
 export default HomePageTemplate;
