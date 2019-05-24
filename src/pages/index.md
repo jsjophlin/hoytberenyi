@@ -98,22 +98,23 @@ tertiary_hero:
   tertiary_hero_image: /img/tbacc_night_01.jpg
   tertiary_hero_image_alt: Tertiary Hero
 projects_section:
-  project_1:
-    project_details_1: Project one details to come...
-    project_image_1: /img/portfolio_1.jpg
-    project_image_alt_1: Project One
-  project_2:
-    project_details_2: Project two details to come...
-    project_image_2: /img/portfolio_3.jpg
-    project_image_alt_2: Project Two
-  project_3:
-    project_details_3: Project three details to come...
-    project_image_3: /img/portfolio_2.jpg
-    project_image_alt_3: Project Three
-  project_4:
-    project_details_4: Project four details to come...
-    project_image_4: /img/portfolio_4.jpg
-    project_image_alt_4: Project Four
+  projects:
+    project_1:
+      project_details_1: Project one details
+      project_image_1: /img/portfolio_1.jpg
+      project_image_alt_1: Project One
+    project_2:
+      project_details_2: Project two details.
+      project_image_2: /img/portfolio_3.jpg
+      project_image_alt_2: Project Two
+    project_3:
+      project_details_3: Project three details.
+      project_image_3: /img/portfolio_2.jpg
+      project_image_alt_3: Project Three
+    project_4:
+      project_details_4: Project four details.
+      project_image_4: /img/portfolio_4.jpg
+      project_image_alt_4: Project Four
   projects_heading: Projects
 meta_title: Home | Hoyt + Berenyi
 meta_description: >-
