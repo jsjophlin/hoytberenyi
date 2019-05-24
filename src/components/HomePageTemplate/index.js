@@ -17,7 +17,7 @@ const HomePageTemplate = ({
   projectHeading,
   projects
 }) => (
-  <div>
+  <>
     <Helmet>
       <title>{metaTitle}</title>
       <meta name="description" content={metaDescription} />
@@ -203,7 +203,7 @@ const HomePageTemplate = ({
         </div>
       </div>
     </section>
-  </div>
+  </>
 );
 
 HomePageTemplate.propTypes = {
