@@ -34,18 +34,6 @@ const HomePagePreview = ({ entry, getAsset }) => {
   const entryAvatar = entry.getIn(["data", "avatar"]);
   const avatar = entryAvatar ? entryAvatar.toJS() : [];
 
-  const entryProject1 = entry.getIn(["data", "project_1"]);
-  const project1 = entryProject1 ? entryProject1.toJS() : [];
-
-  const entryProject2 = entry.getIn(["data", "project_2"]);
-  const project2 = entryProject2 ? entryProject2.toJS() : [];
-
-  const entryProject3 = entry.getIn(["data", "project_3"]);
-  const project3 = entryProject3 ? entryProject3.toJS() : [];
-
-  const entryProject4 = entry.getIn(["data", "project_4"]);
-  const project4 = entryProject4 ? entryProject4.toJS() : [];
-
   return (
     <HomePageTemplate
       title={entry.getIn(["data", "title"])}
@@ -61,10 +49,6 @@ const HomePagePreview = ({ entry, getAsset }) => {
       tertiaryHero={tertiaryHero}
       projectSection={projectSection}
       avatar={avatar}
-      project1={project1}
-      project2={project2}
-      project3={project3}
-      project4={project4}
     />
   );
 };
