@@ -178,52 +178,52 @@ const HomePageTemplate = ({
                 <h3 className="has-text-weight-semibold is-size-2">
                   {projectHeading}
                 </h3>
-                {/* <div className="tile is-ancestor">
+                <div className="tile is-ancestor">
                   <div className="tile is-vertical">
                     <div className="tile is-child">
                       <Img
                         fluid={
-                          projects.project1.project_image_1.childImageSharp
+                          projects.project_1.project_image_1.childImageSharp
                             .fluid
                         }
-                        alt={projects.project1.project_image_alt_1}
+                        alt={projects.project_1.project_image_alt_1}
                       />
-                      <p>{projects.project1.project_details_1}</p>
+                      <p>{projects.project_1.project_details_1}</p>
                     </div>
                     <div className="tile is-child">
                       <Img
                         fluid={
-                          projects.project2.project_image_2.childImageSharp
+                          projects.project_2.project_image_2.childImageSharp
                             .fluid
                         }
-                        alt={projects.project2.project_image_alt_2}
+                        alt={projects.project_2.project_image_alt_2}
                       />
-                      <p>{projects.project2.project_details_2}</p>
+                      <p>{projects.project_2.project_details_2}</p>
                     </div>
                   </div>
                   <div className="tile is-vertical">
                     <div className="tile is-child">
                       <Img
                         fluid={
-                          projects.project3.project_image_3.childImageSharp
+                          projects.project_3.project_image_3.childImageSharp
                             .fluid
                         }
-                        alt={projects.project3.project_image_alt_3}
+                        alt={projects.project_3.project_image_alt_3}
                       />
-                      <p>{projects.project3.project_details_3}</p>
+                      <p>{projects.project_3.project_details_3}</p>
                     </div>
                     <div className="tile is-child">
                       <Img
                         fluid={
-                          projects.project4.project_image_4.childImageSharp
+                          projects.project_4.project_image_4.childImageSharp
                             .fluid
                         }
-                        alt={projects.project4.project_image_alt_4}
+                        alt={projects.project_4.project_image_alt_4}
                       />
-                      <p>{projects.project4.project_details_4}</p>
+                      <p>{projects.project_4.project_details_4}</p>
                     </div>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
@@ -254,8 +254,8 @@ HomePageTemplate.propTypes = {
   ourServicesList: PropTypes.string,
   tertiaryHeroImage: PropTypes.object,
   tertiaryHeroImageAlt: PropTypes.string,
-  projectHeading: PropTypes.string
-  // projects: PropTypes.object
+  projectHeading: PropTypes.string,
+  projects: PropTypes.object
 };
 
 export default HomePageTemplate;
