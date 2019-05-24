@@ -26,7 +26,7 @@ const HomePageTemplate = ({
       <div className="hero-body">
         <div className="container">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column">
               <div className="section">
                 <h1 className="title">{hero.hero_content}</h1>
               </div>
@@ -45,14 +45,14 @@ const HomePageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-one-quarter">
+            <div className="column is-one-third">
               <div className="content">
                 <h3 className="has-text-weight-semibold is-size-2">
                   {about.about_heading}
                 </h3>
               </div>
             </div>
-            <div className="column is-three-quarters">
+            <div className="column is-two-thirds">
               <p>{about.about_body}</p>
             </div>
           </div>
@@ -63,14 +63,14 @@ const HomePageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-one-quarter">
+            <div className="column is-one-third">
               <div className="content">
                 <h3 className="has-text-weight-semibold is-size-2">
                   {ourTeam.our_team_heading}
                 </h3>
               </div>
             </div>
-            <div className="column is-three-quarters">
+            <div className="column is-two-thirds">
               <ul className="columns is-multiline">
                 {ourTeam.avatar.map((item, index) => (
                   <li key={index} className="column is-one-third">
@@ -86,18 +86,7 @@ const HomePageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="hero is-clipped is-primary is-bold is-medium">
-      <div className="hero-body">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
-                <h1 className="title">Secondary Hero</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section className="hero is-clipped is-primary is-bold is-medium hero--secondary">
       <div className="hero-background-image hero-home">
         <Img
           fluid={secondaryHero.secondary_hero_image.childImageSharp.fluid}
@@ -132,7 +121,7 @@ const HomePageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column">
               <div className="content">
                 <h3 className="has-text-weight-semibold is-size-2">
                   {ourServices.our_services_heading}
@@ -145,18 +134,7 @@ const HomePageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="hero is-clipped is-primary is-bold is-medium">
-      <div className="hero-body">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
-                <h1 className="title">Tertiary Hero</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section className="hero is-clipped is-primary is-bold is-medium hero--secondary">
       <div className="hero-background-image hero-home">
         <Img
           fluid={tertiaryHero.tertiary_hero_image.childImageSharp.fluid}
@@ -168,7 +146,7 @@ const HomePageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column">
               <div className="content">
                 <h3 className="has-text-weight-semibold is-size-2">
                   {projectHeading}
