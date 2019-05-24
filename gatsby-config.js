@@ -37,8 +37,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-transformer-remark",
       options: {
@@ -58,14 +56,8 @@ module.exports = {
         ]
       }
     },
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-        enableIdentityWidget: true,
-        htmlTitle: `Hoyt + Berenyi | Engineers & Consultants`
-      }
-    },
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
@@ -202,6 +194,14 @@ module.exports = {
             slug: node => node.fields.slug
           }
         }
+      }
+    },
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+        enableIdentityWidget: true,
+        htmlTitle: `Hoyt + Berenyi | Engineers & Consultants`
       }
     },
     `gatsby-plugin-netlify`
