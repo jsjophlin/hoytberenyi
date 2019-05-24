@@ -35,16 +35,16 @@ const HomePagePreview = ({ entry, getAsset }) => {
   const avatar = entryAvatar ? entryAvatar.toJS() : [];
 
   const entryProject1 = entry.getIn(["data", "project_1"]);
-  const project1 = entryProject ? entryProject.toJS() : [];
+  const project1 = entryProject1 ? entryProject1.toJS() : [];
 
   const entryProject2 = entry.getIn(["data", "project_2"]);
-  const project2 = entryProject ? entryProject.toJS() : [];
+  const project2 = entryProject2 ? entryProject2.toJS() : [];
 
   const entryProject3 = entry.getIn(["data", "project_3"]);
-  const project3 = entryProject ? entryProject.toJS() : [];
+  const project3 = entryProject3 ? entryProject3.toJS() : [];
 
   const entryProject4 = entry.getIn(["data", "project_4"]);
-  const project4 = entryProject ? entryProject.toJS() : [];
+  const project4 = entryProject4 ? entryProject4.toJS() : [];
 
   return (
     <HomePageTemplate
