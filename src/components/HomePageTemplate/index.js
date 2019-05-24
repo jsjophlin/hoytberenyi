@@ -178,8 +178,7 @@ const HomePageTemplate = ({
                 <h3 className="has-text-weight-semibold is-size-2">
                   {projectHeading}
                 </h3>
-
-                <div className="tile is-ancestor">
+                {/* <div className="tile is-ancestor">
                   <div className="tile is-vertical">
                     <div className="tile is-child">
                       <Img
@@ -224,7 +223,7 @@ const HomePageTemplate = ({
                       <p>{projects.project4.project_details_4}</p>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -255,8 +254,8 @@ HomePageTemplate.propTypes = {
   ourServicesList: PropTypes.string,
   tertiaryHeroImage: PropTypes.object,
   tertiaryHeroImageAlt: PropTypes.string,
-  projectHeading: PropTypes.string,
-  projects: PropTypes.object
+  projectHeading: PropTypes.string
+  // projects: PropTypes.object
 };
 
 export default HomePageTemplate;
