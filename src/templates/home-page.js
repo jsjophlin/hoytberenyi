@@ -13,27 +13,13 @@ const HomePage = ({ data }) => {
         title={frontmatter.title}
         metaTitle={frontmatter.meta_title}
         metaDescription={frontmatter.meta_description}
-        heroBody={frontmatter.hero.hero_content}
-        heroImageAlt={frontmatter.hero.hero_image_alt}
-        heroImage={frontmatter.hero.hero_image}
-        aboutHeading={frontmatter.about_section.about_heading}
-        aboutBody={frontmatter.about_section.about_body}
-        ourTeamHeading={frontmatter.our_team_section.our_team_heading}
-        avatar={frontmatter.our_team_section.avatar}
-        secondaryHeroImage={frontmatter.secondary_hero.secondary_hero_image}
-        secondaryHeroImageAlt={
-          frontmatter.secondary_hero.secondary_hero_image_alt
-        }
-        ourProcessHeading={frontmatter.our_process_section.our_process_heading}
-        ourProcessBody={frontmatter.our_process_section.our_process_body}
-        ourProcessImage={frontmatter.our_process_section.our_process_image}
-        ourServicesHeading={
-          frontmatter.our_services_section.our_services_heading
-        }
-        ourServicesBody={frontmatter.our_services_section.our_services_body}
-        ourServicesList={frontmatter.our_services_section.our_services_list}
-        tertiaryHeroImage={frontmatter.tertiary_hero.tertiary_hero_image}
-        tertiaryHeroImageAlt={frontmatter.tertiary_hero.tertiary_hero_image_alt}
+        hero={frontmatter.hero}
+        about={frontmatter.about_section}
+        ourTeam={frontmatter.our_team_section}
+        secondaryHero={frontmatter.secondary_hero}
+        ourProcesses={frontmatter.our_process_section}
+        ourServices={frontmatter.our_services_section}
+        tertiaryHero={frontmatter.tertiary_hero}
         projectHeading={frontmatter.projects_section.projects_heading}
         projects={frontmatter.projects_section.projects}
       />

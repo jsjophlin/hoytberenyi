@@ -7,23 +7,13 @@ const HomePageTemplate = ({
   title,
   metaTitle,
   metaDescription,
-  heroBody,
-  heroImageAlt,
-  heroImage,
-  aboutHeading,
-  aboutBody,
-  ourTeamHeading,
-  avatar,
-  secondaryHeroImage,
-  secondaryHeroImageAlt,
-  ourProcessHeading,
-  ourProcessBody,
-  ourProcessImage,
-  ourServicesHeading,
-  ourServicesBody,
-  ourServicesList,
-  tertiaryHeroImage,
-  tertiaryHeroImageAlt,
+  hero,
+  about,
+  ourTeam,
+  secondaryHero,
+  ourProcesses,
+  ourServices,
+  tertiaryHero,
   projectHeading,
   projects
 }) => (
@@ -38,14 +28,17 @@ const HomePageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
-                <h1 className="title">{heroBody}</h1>
+                <h1 className="title">{hero.hero_content}</h1>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="hero-background-image hero-home">
-        <Img fluid={heroImage.childImageSharp.fluid} alt={heroImageAlt} />
+        <Img
+          fluid={hero.hero_image.childImageSharp.fluid}
+          alt={hero.hero_image_alt}
+        />
       </div>
     </section>
     <section className="section">
@@ -55,12 +48,12 @@ const HomePageTemplate = ({
             <div className="column is-one-quarter">
               <div className="content">
                 <h3 className="has-text-weight-semibold is-size-2">
-                  {aboutHeading}
+                  {about.about_heading}
                 </h3>
               </div>
             </div>
             <div className="column is-three-quarters">
-              <p>{aboutBody}</p>
+              <p>{about.about_body}</p>
             </div>
           </div>
         </div>
@@ -73,13 +66,13 @@ const HomePageTemplate = ({
             <div className="column is-one-quarter">
               <div className="content">
                 <h3 className="has-text-weight-semibold is-size-2">
-                  {ourTeamHeading}
+                  {ourTeam.our_team_heading}
                 </h3>
               </div>
             </div>
             <div className="column is-three-quarters">
               <ul className="columns is-multiline">
-                {avatar.map((item, index) => (
+                {ourTeam.avatar.map((item, index) => (
                   <li key={index} className="column is-one-third">
                     <figure className={`content item-` + index}>
                       <Img fluid={item.portrait.childImageSharp.fluid} />
@@ -107,8 +100,8 @@ const HomePageTemplate = ({
       </div>
       <div className="hero-background-image hero-home">
         <Img
-          fluid={secondaryHeroImage.childImageSharp.fluid}
-          alt={secondaryHeroImageAlt}
+          fluid={secondaryHero.secondary_hero_image.childImageSharp.fluid}
+          alt={secondaryHero.secondary_hero_image_alt}
         />
       </div>
     </section>
@@ -118,15 +111,17 @@ const HomePageTemplate = ({
           <div className="columns">
             <div className="column is-half">
               <div className="content">
-                <Img fluid={ourProcessImage.childImageSharp.fluid} />
+                <Img
+                  fluid={ourProcesses.our_process_image.childImageSharp.fluid}
+                />
               </div>
             </div>
             <div className="column is-half">
               <div className="content">
                 <h3 className="has-text-weight-semibold is-size-2">
-                  {ourProcessHeading}
+                  {ourProcesses.our_process_heading}
                 </h3>
-                <p>{ourProcessBody}</p>
+                <p>{ourProcesses.our_process_body}</p>
               </div>
             </div>
           </div>
@@ -140,10 +135,10 @@ const HomePageTemplate = ({
             <div className="column is-10 is-offset-1">
               <div className="content">
                 <h3 className="has-text-weight-semibold is-size-2">
-                  {ourServicesHeading}
+                  {ourServices.our_services_heading}
                 </h3>
-                <p>{ourServicesBody}</p>
-                <p>{ourServicesList}</p>
+                <p>{ourServices.our_services_body}</p>
+                <p>{ourServices.our_services_list}</p>
               </div>
             </div>
           </div>
@@ -164,8 +159,8 @@ const HomePageTemplate = ({
       </div>
       <div className="hero-background-image hero-home">
         <Img
-          fluid={tertiaryHeroImage.childImageSharp.fluid}
-          alt={tertiaryHeroImageAlt}
+          fluid={tertiaryHero.tertiary_hero_image.childImageSharp.fluid}
+          alt={tertiaryHero.tertiary_hero_image_alt}
         />
       </div>
     </section>
@@ -237,23 +232,13 @@ HomePageTemplate.propTypes = {
   title: PropTypes.string,
   metaTitle: PropTypes.string,
   metaDescription: PropTypes.string,
-  heroBody: PropTypes.string,
-  heroImageAlt: PropTypes.string,
-  heroImage: PropTypes.object,
-  aboutHeading: PropTypes.string,
-  aboutBody: PropTypes.string,
-  ourTeamHeading: PropTypes.string,
-  avatar: PropTypes.array,
-  secondaryHeroImage: PropTypes.object,
-  secondaryHeroImageAlt: PropTypes.string,
-  ourProcessHeading: PropTypes.string,
-  ourProcessBody: PropTypes.string,
-  ourProcessImage: PropTypes.object,
-  ourServicesHeading: PropTypes.string,
-  ourServicesBody: PropTypes.string,
-  ourServicesList: PropTypes.string,
-  tertiaryHeroImage: PropTypes.object,
-  tertiaryHeroImageAlt: PropTypes.string,
+  hero: PropTypes.object,
+  about: PropTypes.object,
+  ourTeam: PropTypes.object,
+  secondaryHero: PropTypes.object,
+  ourProcesses: PropTypes.object,
+  ourServices: PropTypes.object,
+  tertiaryHero: PropTypes.object,
   projectHeading: PropTypes.string,
   projects: PropTypes.object
 };
