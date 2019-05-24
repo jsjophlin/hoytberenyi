@@ -86,7 +86,14 @@ our_services_section:
 
     * Due Diligence
   our_services_heading: Our Services
-  our_services_list: Surveying
+  our_services_list: |-
+    * Surveying
+    * Land Planning
+    * Civil Engineering
+    * Landscape Architecture
+    * Environmental Consulting
+    * Construction Administration
+    * Due Diligence
 tertiary_hero:
   tertiary_hero_image: /img/tbacc_night_01.jpg
   tertiary_hero_image_alt: Tertiary Hero
@@ -105,7 +112,7 @@ projects_section:
     project_image_alt_3: Project Three
   project_4:
     project_details_4: Project four details to come...
-    project_image_4: /img/portfolio_1.jpg
+    project_image_4: /img/portfolio_4.jpg
     project_image_alt_4: Project Four
   projects_heading: Projects
 meta_title: Home | Hoyt + Berenyi
