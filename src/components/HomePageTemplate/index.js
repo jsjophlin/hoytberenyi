@@ -26,7 +26,10 @@ const HomePageTemplate = ({
   tertiaryHeroImage,
   tertiaryHeroImageAlt,
   projectHeading,
-  projects
+  project1,
+  project2,
+  project3,
+  project4
 }) => (
   <div>
     <Helmet>
@@ -179,41 +182,33 @@ const HomePageTemplate = ({
                 <h3 className="has-text-weight-semibold is-size-2">
                   {projectHeading}
                 </h3>
-                {/* <div className="tile is-ancestor">
-                  {projects.map((item, index) => {
-                    let innerTile;
 
-                    if (index === 0 || index === 1) {
-                      innerTile = (
-                        <div
-                          key={index}
-                          className={`tile is-` + (index === 0 ? `4` : `6`)}
-                        >
-                          <figure className={`content item-` + index}>
-                            <Img
-                              fluid={item.project_image.childImageSharp.fluid}
-                              alt={item.project_image_alt}
-                            />
-                            <figcaption>{item.project_details}</figcaption>
-                          </figure>
-                        </div>
-                      );
-                    } else {
-                      innerTile = (
-                        <div key={index} className="tile is-3">
-                          <figure className={`content item-` + index}>
-                            <Img
-                              fluid={item.project_image.childImageSharp.fluid}
-                              alt={item.project_image_alt}
-                            />
-                            <figcaption>{item.project_details}</figcaption>
-                          </figure>
-                        </div>
-                      );
-                    }
-                    return innerTile;
-                  })}
-                </div> */}
+                <div className="tile is-ancestor">
+                  <div className="tile is-vertical">
+                    <div className="tile is-child">
+                      <Img
+                        fluid={project1.project_image_1.childImageSharp.fluid}
+                      />
+                    </div>
+                    <div className="tile is-child">
+                      <Img
+                        fluid={project2.project_image_2.childImageSharp.fluid}
+                      />
+                    </div>
+                  </div>
+                  <div className="tile is-vertical">
+                    <div className="tile is-child">
+                      <Img
+                        fluid={project3.project_image_3.childImageSharp.fluid}
+                      />
+                    </div>
+                    <div className="tile is-child">
+                      <Img
+                        fluid={project4.project_image_4.childImageSharp.fluid}
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -244,10 +239,11 @@ HomePageTemplate.propTypes = {
   ourServicesList: PropTypes.string,
   tertiaryHeroImage: PropTypes.object,
   tertiaryHeroImageAlt: PropTypes.string,
-  projectHeading: PropTypes.string
-  // project1: PropTypes.object,
-  // project2: PropTypes.object,
-  // project3: PropTypes.object,
+  projectHeading: PropTypes.string,
+  project1: PropTypes.object,
+  project2: PropTypes.object,
+  project3: PropTypes.object,
+  project4: PropTypes.object
 };
 
 export default HomePageTemplate;

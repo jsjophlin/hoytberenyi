@@ -34,8 +34,11 @@ const HomePage = ({ data }) => {
         ourServicesList={frontmatter.our_services_section.our_services_list}
         tertiaryHeroImage={frontmatter.tertiary_hero.tertiary_hero_image}
         tertiaryHeroImageAlt={frontmatter.tertiary_hero.tertiary_hero_image_alt}
-        projectHeading={frontmatter.project_section.project_heading}
-        // projects={frontmatter.project_section.project}
+        projectHeading={frontmatter.projects_section.projects_heading}
+        project1={frontmatter.projects_section.project_1}
+        project2={frontmatter.projects_section.project_2}
+        project3={frontmatter.projects_section.project_3}
+        project4={frontmatter.projects_section.project_4}
       />
     </Layout>
   );
@@ -122,8 +125,52 @@ export const pageQuery = graphql`
             }
           }
         }
-        project_section {
-          project_heading
+        projects_section {
+          projects_heading
+          project_1 {
+            project_details_1
+            project_image_alt_1
+            project_image_1 {
+              childImageSharp {
+                fluid(maxWidth: 600, quality: 72) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          project_2 {
+            project_details_2
+            project_image_alt_2
+            project_image_2 {
+              childImageSharp {
+                fluid(maxWidth: 600, quality: 72) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          project_3 {
+            project_details_3
+            project_image_alt_3
+            project_image_3 {
+              childImageSharp {
+                fluid(maxWidth: 600, quality: 72) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          project_4 {
+            project_details_4
+            project_image_alt_4
+            project_image_4 {
+              childImageSharp {
+                fluid(maxWidth: 600, quality: 72) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
       }
     }
