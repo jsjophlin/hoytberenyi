@@ -100,7 +100,7 @@ tertiary_hero:
 projects_section:
   projects:
     project_1:
-      project_details_1: Project one details
+      project_details_1: Project one details.
       project_image_1: /img/portfolio_1.jpg
       project_image_alt_1: Project One
     project_2:
