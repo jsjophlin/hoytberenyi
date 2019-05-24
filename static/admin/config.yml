@@ -164,35 +164,81 @@ collections:
                 ],
             }
           - {
-              label: "Project section",
-              name: project_section,
+              label: "Projects section",
+              name: projects_section,
               widget: object,
               fields:
                 [
                   {
-                    label: "Project heading",
-                    name: project_heading,
+                    label: "Projects heading",
+                    name: projects_heading,
                     widget: string,
                   },
                   {
-                    label: Project,
-                    name: project,
-                    widget: list,
+                    label: Project One,
+                    name: project_1,
+                    widget: object,
                     fields:
                       [
                         {
                           label: "Project image",
-                          name: project_image,
+                          name: project_image_1,
                           widget: image,
                         },
                         {
                           label: "Project image alt",
-                          name: project_image_alt,
+                          name: project_image_alt_1,
                           widget: string,
                         },
                         {
                           label: "Project details",
-                          name: project_details,
+                          name: project_details_1,
+                          widget: markdown,
+                        },
+                      ],
+                  },
+                  {
+                    label: Project Two,
+                    name: project_2,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Project image",
+                          name: project_image_2,
+                          widget: image,
+                        },
+                        {
+                          label: "Project image alt",
+                          name: project_image_alt_2,
+                          widget: string,
+                        },
+                        {
+                          label: "Project details",
+                          name: project_details_2,
+                          widget: markdown,
+                        },
+                      ],
+                  },
+                  {
+                    label: Project Three,
+                    name: project_3,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Project image",
+                          name: project_image_3,
+                          widget: image,
+                        },
+                        {
+                          label: "Project image alt",
+                          name: project_image_alt_3,
+                          widget: string,
+                        },
+                        {
+                          label: "Project details",
+                          name: project_details_3,
                           widget: markdown,
                         },
                       ],

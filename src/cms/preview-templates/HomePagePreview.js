@@ -28,14 +28,20 @@ const HomePagePreview = ({ entry, getAsset }) => {
   const entryTertiaryHero = entry.getIn(["data", "tertiary_hero"]);
   const tertiaryHero = entryTertiaryHero ? entryTertiaryHero.toJS() : [];
 
-  const entryProjectSection = entry.getIn(["data", "project_section"]);
+  const entryProjectSection = entry.getIn(["data", "projects_section"]);
   const projectSection = entryProjectSection ? entryProjectSection.toJS() : [];
 
   const entryAvatar = entry.getIn(["data", "avatar"]);
   const avatar = entryAvatar ? entryAvatar.toJS() : [];
 
-  const entryProject = entry.getIn(["data", "project"]);
-  const project = entryProject ? entryProject.toJS() : [];
+  const entryProject1 = entry.getIn(["data", "project_1"]);
+  const project1 = entryProject ? entryProject.toJS() : [];
+
+  const entryProject2 = entry.getIn(["data", "project_2"]);
+  const project2 = entryProject ? entryProject.toJS() : [];
+
+  const entryProject3 = entry.getIn(["data", "project_3"]);
+  const project3 = entryProject ? entryProject.toJS() : [];
 
   return (
     <HomePageTemplate
@@ -52,7 +58,9 @@ const HomePagePreview = ({ entry, getAsset }) => {
       tertiaryHero={tertiaryHero}
       projectSection={projectSection}
       avatar={avatar}
-      project={project}
+      project1={project1}
+      project2={project2}
+      project3={project3}
     />
   );
 };

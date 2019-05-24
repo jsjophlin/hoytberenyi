@@ -35,7 +35,7 @@ const HomePage = ({ data }) => {
         tertiaryHeroImage={frontmatter.tertiary_hero.tertiary_hero_image}
         tertiaryHeroImageAlt={frontmatter.tertiary_hero.tertiary_hero_image_alt}
         projectHeading={frontmatter.project_section.project_heading}
-        projects={frontmatter.project_section.project}
+        // projects={frontmatter.project_section.project}
       />
     </Layout>
   );
@@ -124,17 +124,6 @@ export const pageQuery = graphql`
         }
         project_section {
           project_heading
-          project {
-            project_details
-            project_image_alt
-            project_image {
-              childImageSharp {
-                fluid(maxWidth: 640, quality: 72) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
         }
       }
     }

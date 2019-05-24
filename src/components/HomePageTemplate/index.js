@@ -179,7 +179,7 @@ const HomePageTemplate = ({
                 <h3 className="has-text-weight-semibold is-size-2">
                   {projectHeading}
                 </h3>
-                <div className="tile is-ancestor">
+                {/* <div className="tile is-ancestor">
                   {projects.map((item, index) => {
                     let innerTile;
 
@@ -213,7 +213,7 @@ const HomePageTemplate = ({
                     }
                     return innerTile;
                   })}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -244,8 +244,10 @@ HomePageTemplate.propTypes = {
   ourServicesList: PropTypes.string,
   tertiaryHeroImage: PropTypes.object,
   tertiaryHeroImageAlt: PropTypes.string,
-  projectHeading: PropTypes.string,
-  projects: PropTypes.array
+  projectHeading: PropTypes.string
+  // project1: PropTypes.object,
+  // project2: PropTypes.object,
+  // project3: PropTypes.object,
 };
 
 export default HomePageTemplate;
