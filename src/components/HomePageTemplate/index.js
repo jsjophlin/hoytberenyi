@@ -25,13 +25,15 @@ const HomePageTemplate = ({
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
       </Helmet>
-      <section className="hero is-primary is-bold is-medium is-fullheight-with-navbar">
+      <section className="hero is-primary is-medium is-fullheight-with-navbar">
         <div className="hero-body">
           <div className="container">
             <div className="columns">
               <div className="column">
                 <div className="section">
-                  <h1 className="title">{hero.hero_content}</h1>
+                  <h1 className="title has-text-centered">
+                    {hero.hero_content}
+                  </h1>
                 </div>
               </div>
             </div>
@@ -127,8 +129,9 @@ const HomePageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-2">
                     {ourServices.our_services_heading}
                   </h3>
-                  <p>{ourServices.our_services_body}</p>
-                  <p>{ourServices.our_services_list}</p>
+                  <p className="multi-column">
+                    {ourServices.our_services_body}
+                  </p>
                 </div>
               </div>
             </div>
@@ -147,15 +150,15 @@ const HomePageTemplate = ({
             <div className="columns">
               <div className="column">
                 <div className="content">
+                  <h3 className="has-text-weight-semibold is-size-2">
+                    {projectHeading}
+                  </h3>
                   <ProjectTiles
                     project1={projects.project_1}
                     project2={projects.project_2}
                     project3={projects.project_3}
                     project4={projects.project_4}
                   />
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    {projectHeading}
-                  </h3>
                 </div>
               </div>
             </div>

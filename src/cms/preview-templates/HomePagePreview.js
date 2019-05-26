@@ -45,7 +45,6 @@ const HomePagePreview = ({ entry, getAsset }) => {
       secondaryHero={secondaryHero}
       ourProcessSection={ourProcessSection}
       ourServicesSection={ourServicesSection}
-      ourServicesSection={ourServicesSection}
       tertiaryHero={tertiaryHero}
       projectSection={projectSection}
       avatar={avatar}

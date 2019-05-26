@@ -126,6 +126,15 @@ collections:
                     name: our_services_list,
                     widget: markdown,
                   },
+                  {
+                    label: "List",
+                    name: service_list,
+                    widget: list,
+                    fields:
+                    [
+                      { label: "Service", name: service, widget: string }
+                    ],
+                  }
                 ],
             }
           - {
