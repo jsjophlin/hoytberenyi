@@ -70,21 +70,6 @@ our_services_section:
 
     Through its staff and local partnerships, Hoyt + Berenyi is able to offer
     clients a wide range of services.
-
-
-    * Surveying
-
-    * Land Planning
-
-    * Civil Engineering
-
-    * Landscape Architecture
-
-    * Environmental Consulting
-
-    * Construction Administration
-
-    * Due Diligence
   our_services_heading: Our Services
   our_services_list: |-
     * Surveying
@@ -94,6 +79,14 @@ our_services_section:
     * Environmental Consulting
     * Construction Administration
     * Due Diligence
+  service_list:
+    - service: Surveying
+    - service: Land Planning
+    - service: Civil Engineering
+    - service: Landscape Architecture
+    - service: Environmental Consulting
+    - service: Construction Administration
+    - service: Due Diligence
 tertiary_hero:
   tertiary_hero_image: /img/tbacc_night_01.jpg
   tertiary_hero_image_alt: Tertiary Hero
