@@ -25,7 +25,7 @@ const HomePageTemplate = ({
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
       </Helmet>
-      <section className="hero is-primary is-medium is-fullheight">
+      <section id="home" className="hero is-primary is-medium is-fullheight">
         <div className="hero-body">
           <div className="container">
             <div className="columns">
@@ -46,8 +46,7 @@ const HomePageTemplate = ({
           />
         </div>
       </section>
-      <a className="anchor" name="about-us" />
-      <section className="section">
+      <section id="about-us" className="section">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -121,8 +120,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <a className="anchor" name="services" />
-      <section className="section">
+      <section id="services" className="section">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -151,8 +149,7 @@ const HomePageTemplate = ({
           imageAlt={tertiaryHero.tertiary_hero_image_alt}
         />
       </section>
-      <a className="anchor" name="projects" />
-      <section className="section">
+      <section id="projects" className="section">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -173,8 +170,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <a className="anchor" name="contact" />
-      <section className="section">
+      <section id="contact" className="section">
         <div className="container">
           <div className="section">
             <div className="columns">

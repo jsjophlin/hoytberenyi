@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import "../../assets/sass/navBar.sass";
 import siteLogo from "../../assets/img/site_logo.png";
 
@@ -21,21 +22,21 @@ const NavBar = ({ toggleNavbar, isActive }) => (
     </div>
     <div className={`navbar-menu ${isActive ? "is-active" : ""}`} id="navMenu">
       <div className="navbar-end">
-        <Link className="navbar-item" to="/">
+        <AnchorLink className="navbar-item" href="#home">
           Home
-        </Link>
-        <Link className="navbar-item" to="/">
+        </AnchorLink>
+        <AnchorLink className="navbar-item" href="#about-us">
           About Us
-        </Link>
-        <Link className="navbar-item" to="/">
+        </AnchorLink>
+        <AnchorLink className="navbar-item" href="#services">
           Services
-        </Link>
-        <Link className="navbar-item" to="/portfolio">
+        </AnchorLink>
+        <AnchorLink className="navbar-item" href="#projects">
           Projects
-        </Link>
-        <Link className="navbar-item" to="/contact">
-          Contact Us
-        </Link>
+        </AnchorLink>
+        <AnchorLink className="navbar-item" href="#contact">
+          Contact
+        </AnchorLink>
       </div>
     </div>
   </nav>
