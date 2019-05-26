@@ -14,7 +14,6 @@
     "clean": "rm -rf public/ .cache/"
   },
   "dependencies": {
-    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.2.1",
     "bulma": "^0.7.2",
     "gatsby": "^2.0.98",
     "gatsby-image": "^2.0.41",

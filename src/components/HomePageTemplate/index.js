@@ -20,12 +20,12 @@ const HomePageTemplate = ({
   projects
 }) => {
   return (
-    <>
+    <main role="main">
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
       </Helmet>
-      <section className="hero is-primary is-medium is-fullheight-with-navbar">
+      <section className="hero is-primary is-medium is-fullheight">
         <div className="hero-body">
           <div className="container">
             <div className="columns">
@@ -46,6 +46,7 @@ const HomePageTemplate = ({
           />
         </div>
       </section>
+      <a className="anchor" name="about-us" />
       <section className="section">
         <div className="container">
           <div className="section">
@@ -120,6 +121,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
+      <a className="anchor" name="services" />
       <section className="section">
         <div className="container">
           <div className="section">
@@ -149,6 +151,7 @@ const HomePageTemplate = ({
           imageAlt={tertiaryHero.tertiary_hero_image_alt}
         />
       </section>
+      <a className="anchor" name="projects" />
       <section className="section">
         <div className="container">
           <div className="section">
@@ -170,7 +173,24 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-    </>
+      <a className="anchor" name="contact" />
+      <section className="section">
+        <div className="container">
+          <div className="section">
+            <div className="columns">
+              <div className="column">
+                <div className="content">
+                  <h3 className="has-text-weight-semibold is-size-2">
+                    Contact
+                  </h3>
+                  <p>Contact section to come...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 };
 
