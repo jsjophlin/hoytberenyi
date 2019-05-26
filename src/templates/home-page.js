@@ -96,7 +96,9 @@ export const pageQuery = graphql`
         our_services_section {
           our_services_heading
           our_services_body
-          our_services_list
+          service_list {
+            service
+          }
         }
         tertiary_hero {
           tertiary_hero_image_alt

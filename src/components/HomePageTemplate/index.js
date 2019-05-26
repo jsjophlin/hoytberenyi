@@ -129,9 +129,14 @@ const HomePageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-2">
                     {ourServices.our_services_heading}
                   </h3>
-                  <p className="multi-column">
-                    {ourServices.our_services_body}
-                  </p>
+                  <div className="multi-column">
+                    <p>{ourServices.our_services_body}</p>
+                    <ul>
+                      {ourServices.service_list.map((item, index) => (
+                        <li key={index}>{item.service}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

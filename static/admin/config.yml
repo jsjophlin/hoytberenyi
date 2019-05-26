@@ -122,19 +122,12 @@ collections:
                   },
                   { label: "Body", name: our_services_body, widget: markdown },
                   {
-                    label: "Our Services list",
-                    name: our_services_list,
-                    widget: markdown,
-                  },
-                  {
                     label: "List",
                     name: service_list,
                     widget: list,
                     fields:
-                    [
-                      { label: "Service", name: service, widget: string }
-                    ],
-                  }
+                      [{ label: "Service", name: service, widget: string }],
+                  },
                 ],
             }
           - {
