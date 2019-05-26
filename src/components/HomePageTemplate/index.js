@@ -20,12 +20,12 @@ const HomePageTemplate = ({
   projects
 }) => {
   return (
-    <>
+    <main role="main">
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
       </Helmet>
-      <section className="hero is-primary is-medium is-fullheight-with-navbar">
+      <section id="home" className="hero is-primary is-medium is-fullheight">
         <div className="hero-body">
           <div className="container">
             <div className="columns">
@@ -46,7 +46,7 @@ const HomePageTemplate = ({
           />
         </div>
       </section>
-      <section className="section">
+      <section id="about-us" className="section">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -120,7 +120,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="section">
+      <section id="services" className="section">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -149,7 +149,7 @@ const HomePageTemplate = ({
           imageAlt={tertiaryHero.tertiary_hero_image_alt}
         />
       </section>
-      <section className="section">
+      <section id="projects" className="section">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -170,7 +170,23 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-    </>
+      <section id="contact" className="section">
+        <div className="container">
+          <div className="section">
+            <div className="columns">
+              <div className="column">
+                <div className="content">
+                  <h3 className="has-text-weight-semibold is-size-2">
+                    Contact
+                  </h3>
+                  <p>Contact section to come...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 };
 
