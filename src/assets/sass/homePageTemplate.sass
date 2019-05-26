@@ -1,7 +1,9 @@
 .hero
   position: relative
-  &.hero--secondary
-    min-height: 420px
+  &.is-secondary
+    min-height: 25vh
+  &.is-primary .gatsby-image-wrapper
+    height: calc(100vh - 3.25rem)
 
 .hero-body
   position: relative
@@ -13,6 +15,3 @@
   left: 0
   width: 100%
   z-index: 10
-
-  > .gatsby-image-wrapper
-    height: calc(100vh - 3.25rem)
