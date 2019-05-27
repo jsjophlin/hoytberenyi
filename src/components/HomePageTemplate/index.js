@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 import { useInView } from "react-intersection-observer";
@@ -94,7 +94,10 @@ const HomePageTemplate = ({
               <div className="column is-two-thirds">
                 <ul className="columns is-multiline">
                   {ourTeam.avatar.map((item, index) => (
-                    <li key={index} className="column is-one-third">
+                    <li
+                      key={index}
+                      className="column is-one-third has-text-centered"
+                    >
                       <figure className={`content item-` + index}>
                         <Img fluid={item.portrait.childImageSharp.fluid} />
                         <figcaption>{item.caption}</figcaption>

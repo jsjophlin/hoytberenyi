@@ -28,7 +28,9 @@ const NavBar = ({ toggleNavbar, isActive }) => {
           <animated.img src={siteLogo} style={logoProps} />
         </Link>
         <button
-          className={`button navbar-burger ${isActive ? "is-active" : ""}`}
+          className={`button navbar-burger is-text ${
+            isActive ? "is-active" : ""
+          }`}
           data-target="navMenu"
           onClick={toggleNavbar}
         >
