@@ -4,14 +4,23 @@ import Img from "gatsby-image";
 import "../../assets/sass/cardReveal.sass";
 import { aspectRatioPadding } from "../../util/helpers";
 
-const CardReveal = ({ alt, details, image }) => {
+const CardReveal = ({ alt, details, direction, image }) => {
   const [revealed, set] = useState(false);
   const cardRevealProps = useSpring({
     to: {
-      transform: revealed ? "translateX(0)" : "translateX(-100%)"
+      transform: revealed
+        ? "translateX(0)"
+        : `translateX(${getDirection(direction)})`
     },
     from: { transform: "translateX(-100%)" }
   });
+
+  function getDirection(dir) {
+    let value;
+    dir === "left" ? (value = "-100%") : (value = "100%");
+
+    return value;
+  }
 
   return (
     <div
