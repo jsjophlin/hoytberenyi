@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import { useSpring, animated } from "react-spring";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { useHideOnScrolled } from "../../hooks";
+import { useTriggerOnScrolled } from "../../hooks";
 import "../../assets/sass/navBar.sass";
 import siteLogo from "../../assets/img/site_logo.png";
 
 const NavBar = ({ toggleNavbar, isActive }) => {
-  const hidden = useHideOnScrolled();
+  const hidden = useTriggerOnScrolled();
 
   const logoProps = useSpring({
     to: {

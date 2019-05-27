@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 import { useInView } from "react-intersection-observer";
+import { useSpring, animated } from "react-spring";
 import Img from "gatsby-image";
 import ParallaxHero from "../ParallaxHero";
 import ProjectTiles from "../ProjectTiles";
@@ -20,9 +21,14 @@ const HomePageTemplate = ({
   projectHeading,
   projects
 }) => {
-  const [menuRef, inView] = useInView({
-    /* Optional options */
+  const [titleRef, inView] = useInView({
     threshold: 0
+  });
+  const titleProps = useSpring({
+    to: {
+      transform: inView ? "scale3d(1,1,1)" : "scale3d(0,0,0)"
+    },
+    from: { transform: "scale3d(0,0,0)" }
   });
 
   return (
@@ -36,11 +42,15 @@ const HomePageTemplate = ({
           <div className="container">
             <div className="columns">
               <div className="column">
-                <div className="section">
+                <animated.div
+                  ref={titleRef}
+                  style={titleProps}
+                  className="section"
+                >
                   <h1 className="title has-text-centered">
                     {hero.hero_content}
                   </h1>
-                </div>
+                </animated.div>
               </div>
             </div>
           </div>

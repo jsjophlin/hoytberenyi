@@ -1,3 +1,3 @@
-import useHideOnScrolled from "./useHideOnScrolled";
+import useTriggerOnScrolled from "./useTriggerOnScrolled";
 
-export { useHideOnScrolled };
+export { useTriggerOnScrolled };
