@@ -5,7 +5,7 @@ const ProjectTiles = ({ project1, project2, project3, project4 }) => {
   return (
     <div className="project">
       <div className="tile is-ancestor">
-        <div className="tile is-vertical">
+        <div className="tile is-vertical is-parent">
           <div className="tile is-child">
             <Img
               fluid={project1.project_image_1.childImageSharp.fluid}
@@ -21,7 +21,7 @@ const ProjectTiles = ({ project1, project2, project3, project4 }) => {
             <p>{project2.project_details_2}</p>
           </div>
         </div>
-        <div className="tile is-vertical">
+        <div className="tile is-vertical is-parent">
           <div className="tile is-child">
             <Img
               fluid={project3.project_image_3.childImageSharp.fluid}

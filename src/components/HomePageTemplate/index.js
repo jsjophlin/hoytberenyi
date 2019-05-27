@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Helmet from "react-helmet";
 import PropTypes from "prop-types";
+import { useInView } from "react-intersection-observer";
 import Img from "gatsby-image";
 import ParallaxHero from "../ParallaxHero";
 import ProjectTiles from "../ProjectTiles";
@@ -19,6 +20,11 @@ const HomePageTemplate = ({
   projectHeading,
   projects
 }) => {
+  const [menuRef, inView] = useInView({
+    /* Optional options */
+    threshold: 0
+  });
+
   return (
     <main role="main">
       <Helmet>
