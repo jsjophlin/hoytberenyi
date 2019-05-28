@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-business",
-  "description": "Gatsby Business Website Starter",
-  "author": "Vaibhav Sharma",
+  "description": "Hoyt + Berenyi company website",
+  "author": "Josiah Jophlin",
   "version": "2.1.1",
   "license": "MIT",
   "scripts": {
@@ -29,6 +29,7 @@
     "gatsby-plugin-sass": "^2.0.7",
     "gatsby-plugin-sharp": "^2.0.18",
     "gatsby-plugin-sitemap": "^2.0.4",
+    "gatsby-plugin-typography": "^2.2.13",
     "gatsby-remark-images": "^3.0.1",
     "gatsby-remark-relative-images": "^0.2.1",
     "gatsby-source-filesystem": "^2.0.17",
@@ -46,6 +47,8 @@
     "react-intersection-observer": "^8.23.0",
     "react-share": "^2.4.0",
     "react-spring": "^8.0.20",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
     "uglifyjs-webpack-plugin": "^2.1.1"
   },
   "remarkConfig": {

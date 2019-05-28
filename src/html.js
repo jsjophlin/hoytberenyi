@@ -20,6 +20,10 @@ export default class HTML extends Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+          <link
+            href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap"
+            rel="stylesheet"
+          />
         </body>
       </html>
     );

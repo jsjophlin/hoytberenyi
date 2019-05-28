@@ -1,9 +1,12 @@
 .hero
   position: relative
-  &.is-secondary
-    min-height: 25vh
+
   &.is-primary .gatsby-image-wrapper
     height: 100vh
+
+  h1
+    font-size: 2.375rem
+    font-weight: 900
 
 .hero-body
   position: relative
@@ -20,5 +23,38 @@
   z-index: 10
 
 .multi-column
-  column-count: 2
-  column-gap: 2.5rem
+  column-count: 1
+
+  @media screen and (min-width: 46.0625rem)
+    column-count: 2
+    column-gap: 2.5rem
+
+.content h2
+  color: #002856
+  font-size: 2.2rem
+  font-weight: 700
+
+figcaption
+  color: #002856
+  font-family: 'Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'
+  font-weight: 700
+  margin-top: .75rem
+
+ul,
+.content ul
+  margin-left: 0
+  
+  > li
+    font-weight: 700
+    list-style-type: none
+
+.avatars .gatsby-image-wrapper
+  max-width: 25rem
+  margin: 0 auto
+
+  @media screen and (min-width: 48.0125rem)
+    max-width: inherit
+    margin: inherit
+
+.parallax-hero > .gatsby-image-wrapper > div:first-child
+  min-height: 40vh

@@ -8,7 +8,6 @@ import ParallaxHero from "../ParallaxHero";
 import ProjectTiles from "../ProjectTiles";
 
 const HomePageTemplate = ({
-  title,
   metaTitle,
   metaDescription,
   hero,
@@ -47,9 +46,7 @@ const HomePageTemplate = ({
                   style={titleProps}
                   className="section"
                 >
-                  <h1 className="title has-text-centered">
-                    {hero.hero_content}
-                  </h1>
+                  <h1 className="has-text-centered">{hero.hero_content}</h1>
                 </animated.div>
               </div>
             </div>
@@ -68,9 +65,7 @@ const HomePageTemplate = ({
             <div className="columns">
               <div className="column is-one-third">
                 <div className="content">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    {about.about_heading}
-                  </h3>
+                  <h2>{about.about_heading}</h2>
                 </div>
               </div>
               <div className="column is-two-thirds">
@@ -86,13 +81,11 @@ const HomePageTemplate = ({
             <div className="columns">
               <div className="column is-one-third">
                 <div className="content">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    {ourTeam.our_team_heading}
-                  </h3>
+                  <h2>{ourTeam.our_team_heading}</h2>
                 </div>
               </div>
               <div className="column is-two-thirds">
-                <ul className="columns is-multiline">
+                <ul className="columns is-multiline avatars">
                   {ourTeam.avatar.map((item, index) => (
                     <li
                       key={index}
@@ -129,9 +122,7 @@ const HomePageTemplate = ({
               </div>
               <div className="column is-half">
                 <div className="content">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    {ourProcesses.our_process_heading}
-                  </h3>
+                  <h2>{ourProcesses.our_process_heading}</h2>
                   <p>{ourProcesses.our_process_body}</p>
                 </div>
               </div>
@@ -145,9 +136,7 @@ const HomePageTemplate = ({
             <div className="columns">
               <div className="column">
                 <div className="content">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    {ourServices.our_services_heading}
-                  </h3>
+                  <h2>{ourServices.our_services_heading}</h2>
                   <div className="multi-column">
                     <p>{ourServices.our_services_body}</p>
                     <ul>
@@ -174,9 +163,7 @@ const HomePageTemplate = ({
             <div className="columns">
               <div className="column">
                 <div className="content">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    {projectHeading}
-                  </h3>
+                  <h2>{projectHeading}</h2>
                   <ProjectTiles
                     project1={projects.project_1}
                     project2={projects.project_2}
@@ -195,9 +182,7 @@ const HomePageTemplate = ({
             <div className="columns">
               <div className="column">
                 <div className="content">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Contact
-                  </h3>
+                  <h2>Contact</h2>
                   <p>Contact section to come...</p>
                 </div>
               </div>
@@ -210,7 +195,6 @@ const HomePageTemplate = ({
 };
 
 HomePageTemplate.propTypes = {
-  title: PropTypes.string,
   metaTitle: PropTypes.string,
   metaDescription: PropTypes.string,
   hero: PropTypes.object,

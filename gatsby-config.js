@@ -66,6 +66,12 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-typography",
+      options: {
+        pathToConfigModule: "config/typography.js"
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         id: config.googleTagManagerID,
