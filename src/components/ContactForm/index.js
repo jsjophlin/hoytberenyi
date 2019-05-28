@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { navigate } from "gatsby-link";
-import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 
 const encode = data => {
@@ -9,7 +8,7 @@ const encode = data => {
     .join("&");
 };
 
-class ContactPageTemplate extends Component {
+class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = { isValidated: false };
@@ -37,13 +36,8 @@ class ContactPageTemplate extends Component {
   };
 
   render() {
-    const { title, subtitle, meta_title, meta_description } = this.props;
     return (
       <div>
-        <Helmet>
-          <title>{meta_title}</title>
-          <meta name="description" content={meta_description} />
-        </Helmet>
         <section className="section">
           <div className="container">
             <form
@@ -132,11 +126,11 @@ class ContactPageTemplate extends Component {
   }
 }
 
-ContactPageTemplate.propTypes = {
+ContactForm.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   meta_title: PropTypes.string,
   meta_description: PropTypes.string
 };
 
-export default ContactPageTemplate;
+export default ContactForm;

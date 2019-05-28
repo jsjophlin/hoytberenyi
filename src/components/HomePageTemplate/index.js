@@ -6,6 +6,7 @@ import { useSpring, animated } from "react-spring";
 import Img from "gatsby-image";
 import ParallaxHero from "../ParallaxHero";
 import ProjectTiles from "../ProjectTiles";
+import ContactForm from "../ContactForm";
 
 const HomePageTemplate = ({
   metaTitle,
@@ -180,10 +181,28 @@ const HomePageTemplate = ({
         <div className="container">
           <div className="section">
             <div className="columns">
-              <div className="column">
+              <div className="column is-one-third">
                 <div className="content">
                   <h2>Contact</h2>
-                  <p>Contact section to come...</p>
+                  <p>
+                    To contact us about providing you with any of our services
+                    please contact us at{" "}
+                    <a href="tel:1-843-408-3546">843.408.3546</a>.
+                  </p>
+                  <p>Social icons here...</p>
+                  <h3>Career Opportunities</h3>
+                  <p>
+                    Hoyt + Berenyi is a great place to work. Please feel free to
+                    forward your resume in confidence at any time.
+                  </p>
+                </div>
+              </div>
+              <div className="column is-two-thirds">
+                <div className="content">
+                  <ContactForm
+                    title="Contact Title"
+                    subtitle="Contact Subtitle"
+                  />
                 </div>
               </div>
             </div>
