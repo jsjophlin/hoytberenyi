@@ -7,6 +7,7 @@ import Img from "gatsby-image";
 import ParallaxHero from "../ParallaxHero";
 import ProjectTiles from "../ProjectTiles";
 import ContactForm from "../ContactForm";
+import "../../assets/sass/homePageTemplate.sass";
 
 const HomePageTemplate = ({
   metaTitle,

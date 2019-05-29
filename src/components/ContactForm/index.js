@@ -98,12 +98,7 @@ class ContactForm extends Component {
                 </div>
               </div>
 
-              <div className="field is-grouped is-pulled-right">
-                <div className="control">
-                  <button className="button is-text" type="reset">
-                    Cancel
-                  </button>
-                </div>
+              <div className="field is-grouped">
                 <div className="control">
                   <button
                     className="button is-primary"
@@ -115,6 +110,11 @@ class ContactForm extends Component {
                     }
                   >
                     Submit
+                  </button>
+                </div>
+                <div className="control">
+                  <button className="button is-text" type="reset">
+                    Cancel
                   </button>
                 </div>
               </div>

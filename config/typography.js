@@ -35,9 +35,6 @@ const typography = new Typography({
       fontSize: "2.2rem",
       fontWeight: "700"
     },
-    p: {
-      color: "#808888"
-    },
     li: {
       color: "#808888"
     }

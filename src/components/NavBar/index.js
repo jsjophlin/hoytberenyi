@@ -11,7 +11,7 @@ const NavBar = ({ toggleNavbar, isActive }) => {
 
   const logoProps = useSpring({
     to: {
-      maxHeight: !hidden ? "5rem" : "2.5rem"
+      maxHeight: !hidden ? "3.5rem" : "2.5rem"
     },
     from: { maxHeight: "2.5rem" }
   });
