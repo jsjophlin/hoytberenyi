@@ -31,8 +31,8 @@ const Carousel = props => {
           <Img fluid={props.images[3].project_image_4.childImageSharp.fluid} />
         </Slide>
       </Slider>
-      <ButtonBack>Back</ButtonBack>
-      <ButtonNext>Next</ButtonNext>
+      <ButtonBack>{`<`}</ButtonBack>
+      <ButtonNext>{`>`}</ButtonNext>
     </CarouselProvider>
   );
 };

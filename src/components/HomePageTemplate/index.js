@@ -39,7 +39,7 @@ const HomePageTemplate = ({
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
       </Helmet>
-      <section id="home" className="hero is-primary is-medium is-fullheight">
+      {/* <section id="home" className="hero is-primary is-medium is-fullheight">
         <div className="hero-body">
           <div className="container">
             <div className="columns">
@@ -61,7 +61,7 @@ const HomePageTemplate = ({
             alt={hero.hero_image_alt}
           />
         </div>
-      </section>
+      </section> */}
       <section id="about-us" className="section">
         <div className="container">
           <div className="section">
@@ -78,7 +78,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="section">
+      {/* <section className="section">
         <Carousel
           images={[
             projects.project_1,
@@ -87,7 +87,7 @@ const HomePageTemplate = ({
             projects.project_4
           ]}
         />
-      </section>
+      </section> */}
       <section className="section">
         <div className="container">
           <div className="section">
