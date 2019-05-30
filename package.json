@@ -40,6 +40,7 @@
     "netlify-cms": "^2.3.3",
     "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
+    "pure-react-carousel": "^1.20.0",
     "react": "^16.7.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.7.0",

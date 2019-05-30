@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { useInView } from "react-intersection-observer";
 import { useSpring, animated } from "react-spring";
 import Img from "gatsby-image";
+import Carousel from "../Carousel";
 import ParallaxHero from "../ParallaxHero";
 import ProjectTiles from "../ProjectTiles";
 import ContactForm from "../ContactForm";
@@ -76,6 +77,16 @@ const HomePageTemplate = ({
             </div>
           </div>
         </div>
+      </section>
+      <section className="section">
+        <Carousel
+          images={[
+            projects.project_1,
+            projects.project_2,
+            projects.project_3,
+            projects.project_4
+          ]}
+        />
       </section>
       <section className="section">
         <div className="container">
