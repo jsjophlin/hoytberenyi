@@ -13,6 +13,7 @@ const HomePage = ({ data }) => {
         title={frontmatter.title}
         metaTitle={frontmatter.meta_title}
         metaDescription={frontmatter.meta_description}
+        heroCarousel={frontmatter.hero_carousel}
         hero={frontmatter.hero}
         about={frontmatter.about_section}
         ourTeam={frontmatter.our_team_section}
@@ -44,6 +45,17 @@ export const pageQuery = graphql`
         title
         meta_title
         meta_description
+        hero_carousel {
+          hero_carousel_image {
+            childImageSharp {
+              fluid(maxWidth: 1280, quality: 72) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          hero_carousel_image_alt
+          hero_carousel_content
+        }
         hero {
           hero_content
           hero_image_alt
