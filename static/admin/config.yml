@@ -22,6 +22,30 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - {
+              label: "Hero Carousel",
+              name: hero_carousel,
+              widget: "list",
+              fields:
+                [
+                  {
+                    label: "Hero Carousel Image",
+                    name: hero_carousel_image,
+                    widget: image,
+                  },
+                  {
+                    label: "Hero Carousel Image alt",
+                    name: hero_carousel_image_alt,
+                    widget: string,
+                  },
+                  {
+                    label: "Hero Carousel content",
+                    name: hero_carousel_content,
+                    widget: string,
+                    optional: true,
+                  },
+                ],
+            }
+          - {
               label: Hero,
               name: hero,
               widget: object,
