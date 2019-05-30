@@ -1,6 +1,22 @@
 ---
 templateKey: home-page
 title: Hoyt + Berenyi
+hero_carousel:
+  - hero_carousel_content: 'Development is Dynamic, is your Engineer?'
+    hero_carousel_image: /img/hero_se.jpg
+    hero_carousel_image_alt: Hero carousel 1
+  - hero_carousel_content: Our People Make the Difference
+    hero_carousel_image: /img/hero_2__sparc.jpg
+    hero_carousel_image_alt: Hero carousel 2
+  - hero_carousel_content: Our Process Ensures Your Success
+    hero_carousel_image: /img/hero_3__streit.jpg
+    hero_carousel_image_alt: Hero carousel 3
+  - hero_carousel_content: Quality and Reputation is Everything
+    hero_carousel_image: /img/hero_4__elms.jpg
+    hero_carousel_image_alt: Hero carousel 4
+  - hero_carousel_content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+    hero_carousel_image: /img/hero_5.jpg
+    hero_carousel_image_alt: Hero carousel 5
 hero:
   hero_content: 'Development is Dynamic, is your Engineer?'
   hero_image: /img/hero_se.jpg
@@ -71,14 +87,6 @@ our_services_section:
     Through its staff and local partnerships, Hoyt + Berenyi is able to offer
     clients a wide range of services.
   our_services_heading: Our Services
-  our_services_list: |-
-    * Surveying
-    * Land Planning
-    * Civil Engineering
-    * Landscape Architecture
-    * Environmental Consulting
-    * Construction Administration
-    * Due Diligence
   service_list:
     - service: Surveying
     - service: Land Planning
