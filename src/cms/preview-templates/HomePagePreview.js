@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 import HomePageTemplate from "../../components/HomePageTemplate";
 
 const HomePagePreview = ({ entry, getAsset }) => {
+  const entryHeroCarousel = entry.getIn(["data", "hero_carousel"]);
+  const heroCarousel = entryHeroCarousel ? entryHeroCarousel.toJS() : [];
+
   const entryHero = entry.getIn(["data", "hero"]);
   const hero = entryHero ? entryHero.toJS() : [];
 
@@ -39,6 +42,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
       title={entry.getIn(["data", "title"])}
       meta_title={entry.getIn(["data", "meta_title"])}
       meta_description={entry.getIn(["data", "meta_description"])}
+      heroCarousel={heroCarousel}
       hero={hero}
       aboutSection={aboutSection}
       ourTeamSection={ourTeamSection}
