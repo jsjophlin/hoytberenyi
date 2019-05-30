@@ -4,9 +4,18 @@ import "../../assets/sass/carousel.sass";
 
 const Carousel = props => {
   return (
-    <div className="carousel">
-      {props.imageArray.map((image, index) => console.log(index, image))}
-      <h2>Carousel</h2>
+    <div className="carousel-container">
+      {props.imageArray.map((item, index) => {
+        return (
+          <div className="carousel" key={index}>
+            <Img
+              fluid={item.hero_carousel_image.childImageSharp.fluid}
+              alt={item.hero_carousel_image_alt}
+            />
+            <p>{item.hero_carousel_content}</p>
+          </div>
+        );
+      })}
     </div>
   );
 };
