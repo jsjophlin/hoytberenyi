@@ -11,6 +11,12 @@ hero_carousel:
   - hero_carousel_content: Our Process Ensures Your Success
     hero_carousel_image: /img/hero_3__streit.jpg
     hero_carousel_image_alt: Hero carousel 3
+  - hero_carousel_content: Quality and Reputation is Everything
+    hero_carousel_image: /img/hero_4__elms.jpg
+    hero_carousel_image_alt: Hero carousel 4
+  - hero_carousel_content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+    hero_carousel_image: /img/hero_5.jpg
+    hero_carousel_image_alt: Hero carousel 5
 hero:
   hero_content: 'Development is Dynamic, is your Engineer?'
   hero_image: /img/hero_se.jpg
