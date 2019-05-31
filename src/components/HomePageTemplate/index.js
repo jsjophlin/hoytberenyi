@@ -48,7 +48,7 @@ const HomePageTemplate = ({
           numItems={heroCarousel.length}
         />
       </section>
-      <section id="about-us" className="section">
+      <section id="about-us">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -64,7 +64,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="section">
+      <section>
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -98,7 +98,7 @@ const HomePageTemplate = ({
           imageAlt={secondaryHero.secondary_hero_image_alt}
         />
       </section>
-      <section className="section">
+      <section>
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -119,7 +119,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section id="services" className="section">
+      <section id="services">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -146,7 +146,7 @@ const HomePageTemplate = ({
           imageAlt={tertiaryHero.tertiary_hero_image_alt}
         />
       </section>
-      <section id="projects" className="section">
+      <section id="projects">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -165,7 +165,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section id="contact" className="section">
+      <section id="contact">
         <div className="container">
           <div className="section">
             <div className="columns">
