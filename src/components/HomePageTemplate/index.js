@@ -40,7 +40,10 @@ const HomePageTemplate = ({
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
       </Helmet>
-      <section id="home" className="hero is-primary is-fullheight">
+      <section
+        id="home"
+        className="hero is-primary is-fullheight primary-hero--section"
+      >
         <Carousel
           items={heroCarousel}
           slideWidth={2160}
@@ -48,7 +51,7 @@ const HomePageTemplate = ({
           numItems={heroCarousel.length}
         />
       </section>
-      <section id="about-us">
+      <section id="about-us" className="about-us--section">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -64,7 +67,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section>
+      <section className="our-team--section">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -92,13 +95,13 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="hero is-secondary is-clipped is-bold is-medium">
+      <section className="hero is-secondary is-clipped is-bold is-medium secondary-hero--section">
         <ParallaxHero
           image={secondaryHero.secondary_hero_image.childImageSharp.fluid}
           imageAlt={secondaryHero.secondary_hero_image_alt}
         />
       </section>
-      <section>
+      <section className="our-processes--section">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -119,7 +122,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section id="services">
+      <section id="services" className="services--section">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -140,13 +143,13 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="hero is-secondary is-clipped is-bold is-medium">
+      <section className="hero is-secondary is-clipped is-bold is-medium tertiary-hero--section">
         <ParallaxHero
           image={tertiaryHero.tertiary_hero_image.childImageSharp.fluid}
           imageAlt={tertiaryHero.tertiary_hero_image_alt}
         />
       </section>
-      <section id="projects">
+      <section id="projects" className="projects--section">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -165,7 +168,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section id="contact">
+      <section id="contact" className="contact--section">
         <div className="container">
           <div className="section">
             <div className="columns">
