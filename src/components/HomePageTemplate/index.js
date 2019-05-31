@@ -7,11 +7,13 @@ import Img from "gatsby-image";
 import ParallaxHero from "../ParallaxHero";
 import ProjectTiles from "../ProjectTiles";
 import ContactForm from "../ContactForm";
+import Carousel from "../Carousel";
 import "../../assets/sass/homePageTemplate.sass";
 
 const HomePageTemplate = ({
   metaTitle,
   metaDescription,
+  heroCarousel,
   hero,
   about,
   ourTeam,
@@ -38,7 +40,7 @@ const HomePageTemplate = ({
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
       </Helmet>
-      <section id="home" className="hero is-primary is-medium is-fullheight">
+      {/* <section id="home" className="hero is-primary is-medium is-fullheight">
         <div className="hero-body">
           <div className="container">
             <div className="columns">
@@ -60,6 +62,9 @@ const HomePageTemplate = ({
             alt={hero.hero_image_alt}
           />
         </div>
+      </section> */}
+      <section className="section">
+        <Carousel items={heroCarousel} />
       </section>
       <section id="about-us" className="section">
         <div className="container">
@@ -217,6 +222,7 @@ const HomePageTemplate = ({
 HomePageTemplate.propTypes = {
   metaTitle: PropTypes.string,
   metaDescription: PropTypes.string,
+  heroCarousel: PropTypes.array,
   hero: PropTypes.object,
   about: PropTypes.object,
   ourTeam: PropTypes.object,
