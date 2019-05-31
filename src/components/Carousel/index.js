@@ -2,50 +2,38 @@ import React from "react";
 import {
   CarouselProvider,
   Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext
+  Slide
+  // ButtonBack,
+  // ButtonNext
 } from "pure-react-carousel";
 import Img from "gatsby-image";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import "../../assets/sass/carousel.sass";
 
-const Carousel = props => {
+const Carousel = ({ items, slideWidth, slideHeight, numItems }) => {
   return (
     <CarouselProvider
-      naturalSlideWidth={2358}
-      naturalSlideHeight={1474}
-      totalSlides={5}
+      naturalSlideWidth={slideWidth}
+      naturalSlideHeight={slideHeight}
+      totalSlides={numItems}
     >
       <Slider className="carousel" isPlaying={true}>
-        <Slide index={0}>
-          <Img
-            fluid={props.items[0].hero_carousel_image.childImageSharp.fluid}
-          />
-        </Slide>
-        <Slide index={1}>
-          <Img
-            fluid={props.items[1].hero_carousel_image.childImageSharp.fluid}
-          />
-        </Slide>
-        <Slide index={2}>
-          <Img
-            fluid={props.items[2].hero_carousel_image.childImageSharp.fluid}
-          />
-        </Slide>
-        <Slide index={3}>
-          <Img
-            fluid={props.items[3].hero_carousel_image.childImageSharp.fluid}
-          />
-        </Slide>
-        <Slide index={4}>
-          <Img
-            fluid={props.items[4].hero_carousel_image.childImageSharp.fluid}
-          />
-        </Slide>
+        {items.map((item, index) => {
+          return (
+            <Slide key={index} index={index}>
+              <Img
+                fluid={item.hero_carousel_image.childImageSharp.fluid}
+                alt={item.hero_carousel_image_alt}
+              />
+              <div className="hero-carousel--content">
+                <h1>{item.hero_carousel_content}</h1>
+              </div>
+            </Slide>
+          );
+        })}
       </Slider>
-      <ButtonBack>{`<`}</ButtonBack>
-      <ButtonNext>{`>`}</ButtonNext>
+      {/* <ButtonBack>{`<`}</ButtonBack>
+      <ButtonNext>{`>`}</ButtonNext> */}
     </CarouselProvider>
   );
 };

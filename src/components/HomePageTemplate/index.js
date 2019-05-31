@@ -40,31 +40,13 @@ const HomePageTemplate = ({
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
       </Helmet>
-      {/* <section id="home" className="hero is-primary is-medium is-fullheight">
-        <div className="hero-body">
-          <div className="container">
-            <div className="columns">
-              <div className="column">
-                <animated.div
-                  ref={titleRef}
-                  style={titleProps}
-                  className="section"
-                >
-                  <h1 className="has-text-centered">{hero.hero_content}</h1>
-                </animated.div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="hero-background-image hero-home">
-          <Img
-            fluid={hero.hero_image.childImageSharp.fluid}
-            alt={hero.hero_image_alt}
-          />
-        </div>
-      </section> */}
-      <section className="section">
-        <Carousel items={heroCarousel} />
+      <section id="home" className="hero is-primary is-fullheight">
+        <Carousel
+          items={heroCarousel}
+          slideWidth={2160}
+          slideHeight={1352}
+          numItems={heroCarousel.length}
+        />
       </section>
       <section id="about-us" className="section">
         <div className="container">
