@@ -3,23 +3,23 @@ templateKey: home-page
 title: Hoyt + Berenyi
 hero_carousel:
   - hero_carousel_content: 'Development is Dynamic, is your Engineer?'
-    hero_carousel_image: /img/hero_se.jpg
+    hero_carousel_image: /img/hero_one.jpg
     hero_carousel_image_alt: Hero carousel 1
   - hero_carousel_content: Our People Make the Difference
-    hero_carousel_image: /img/hero_2__sparc.jpg
+    hero_carousel_image: /img/hero_two.jpg
     hero_carousel_image_alt: Hero carousel 2
   - hero_carousel_content: Our Process Ensures Your Success
-    hero_carousel_image: /img/hero_3__streit.jpg
+    hero_carousel_image: /img/hero_three.jpg
     hero_carousel_image_alt: Hero carousel 3
   - hero_carousel_content: Quality and Reputation is Everything
-    hero_carousel_image: /img/hero_4__elms.jpg
+    hero_carousel_image: /img/hero_four.jpg
     hero_carousel_image_alt: Hero carousel 4
   - hero_carousel_content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-    hero_carousel_image: /img/hero_5.jpg
+    hero_carousel_image: /img/hero_five.jpg
     hero_carousel_image_alt: Hero carousel 5
 hero:
   hero_content: 'Development is Dynamic, is your Engineer?'
-  hero_image: /img/hero_se.jpg
+  hero_image: /img/hero_one.jpg
   hero_image_alt: Primary Hero
 about_section:
   about_body: >-
