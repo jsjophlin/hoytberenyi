@@ -1,11 +1,17 @@
+$shadow: 0px 0px 12px rgba(0, 0, 0, 0.3)
+  
 .avatars .gatsby-image-wrapper
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3)
   max-width: 25rem
   margin: 0 auto
 
   @media screen and (min-width: 48.0125rem)
     max-width: inherit
     margin: inherit
+
+.avatars,
+.our-processes--section
+  .gatsby-image-wrapper
+    box-shadow: $shadow
 
 .parallax-hero > .gatsby-image-wrapper > div:first-child
   min-height: 40vh
