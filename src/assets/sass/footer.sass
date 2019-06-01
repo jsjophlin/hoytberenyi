@@ -1,0 +1,27 @@
+$primary: #002856
+$secondary: #628d3c
+
+.footer
+  background-color: white
+  color: $primary
+  padding: 3.5rem 1.5rem
+
+  .slice,
+  .divider
+    font-size: .85rem
+
+  .slice
+    display: block
+    margin-bottom: 10px
+
+    &:last-of-type
+      margin-bottom: 0
+
+  .divider
+    display: none
+    padding: 0 .5rem
+
+  @media (min-width: 768px)
+    .slice,
+    .divider
+      display: inline
