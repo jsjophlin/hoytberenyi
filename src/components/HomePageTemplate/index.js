@@ -101,7 +101,7 @@ const HomePageTemplate = ({
           imageAlt={secondaryHero.secondary_hero_image_alt}
         />
       </section>
-      <section className="our-processes--section">
+      <section id="our-processes" className="our-processes--section">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -122,7 +122,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section id="services" className="services--section">
+      <section id="our-services" className="services--section">
         <div className="container">
           <div className="section">
             <div className="columns">

@@ -19,7 +19,9 @@ const NavBar = ({ toggleNavbar, isActive }) => {
   return (
     <nav
       className={
-        !hidden ? "navbar is-fixed-top navbar-at-top" : "navbar is-fixed-top"
+        !hidden
+          ? "navbar is-fixed-top navbar-at-top is-transparent"
+          : "navbar is-fixed-top is-transparent"
       }
       aria-label="main navigation"
     >
@@ -39,9 +41,10 @@ const NavBar = ({ toggleNavbar, isActive }) => {
           <span />
         </button>
       </div>
+
       <div
-        className={`navbar-menu ${isActive ? "is-active" : ""}`}
         id="navMenu"
+        className={`navbar-menu ${isActive ? "is-active" : ""}`}
       >
         <div className="navbar-end">
           <AnchorLink className="navbar-item" href="#home">
@@ -50,9 +53,19 @@ const NavBar = ({ toggleNavbar, isActive }) => {
           <AnchorLink className="navbar-item" href="#about-us">
             About Us
           </AnchorLink>
-          <AnchorLink className="navbar-item" href="#services">
-            Services
-          </AnchorLink>
+          <div className="navbar-item has-dropdown is-hoverable">
+            <a className="navbar-link" href="#">
+              Services
+            </a>
+            <div className="navbar-dropdown is-boxed">
+              <AnchorLink className="navbar-item" href="#our-processes">
+                Our Processes
+              </AnchorLink>
+              <AnchorLink className="navbar-item" href="#our-services">
+                Our Services
+              </AnchorLink>
+            </div>
+          </div>
           <AnchorLink className="navbar-item" href="#projects">
             Projects
           </AnchorLink>

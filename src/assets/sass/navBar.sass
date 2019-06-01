@@ -1,3 +1,6 @@
+$primary: #002856
+$secondary: #628d3c
+
 .navbar 
   background-color: rgba(133, 172, 174, .4)
   border-bottom: none
@@ -20,25 +23,37 @@
     .navbar-end
       margin-right: 2rem
 
-a.navbar-item 
-  color: #002856
-  font-weight: 700
-
-  img
-    margin-bottom: 0
-    max-height: 5rem
-
-  &:hover,
-  &:focus
-    color: #628D3C
-    background-color: transparent
-
 .navbar-end
   margin-right: 0
   transition: margin .33s ease-in-out
 
-.navbar-menu,
-.button.is-text.is-active,
-.button.is-text:hover,
-.button.is-text:focus
-  background-color: transparent
+a.navbar-item,
+a.navbar-link
+  color: $primary
+  font-weight: 700
+
+a.navbar-item:hover,
+.navbar.is-transparent .navbar-dropdown a.navbar-item:focus,
+a.navbar-item:focus,
+a.navbar-item:visited,
+.navbar-item.has-dropdown:hover .navbar-link
+  color: $secondary
+
+.navbar-item.has-dropdown:hover .navbar-link::after
+  border-color: $secondary
+
+a.navbar-item img
+  margin-bottom: 0
+  max-height: 5rem
+
+.navbar-link:not(.is-arrowless)::after
+  border-color: $primary
+
+.navbar-dropdown
+  background-color: $primary
+  
+  a
+    color: white
+
+.navbar.is-transparent .navbar-dropdown a.navbar-item:hover
+  color: $secondary
