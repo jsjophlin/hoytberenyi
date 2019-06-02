@@ -7,6 +7,7 @@ import {
   // ButtonNext
 } from "pure-react-carousel";
 import Img from "gatsby-image";
+import AnimatedEntranceBlock from "../AnimatedEntranceBlock";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import "../../assets/sass/carousel.sass";
 
@@ -26,7 +27,9 @@ const Carousel = ({ items, slideWidth, slideHeight, numItems }) => {
                 alt={item.hero_carousel_image_alt}
               />
               <div className="hero-carousel--content">
-                <h1>{item.hero_carousel_content}</h1>
+                <AnimatedEntranceBlock>
+                  <h1>{item.hero_carousel_content}</h1>
+                </AnimatedEntranceBlock>
               </div>
             </Slide>
           );
