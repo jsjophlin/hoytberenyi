@@ -56,34 +56,36 @@ const HomePageTemplate = ({
         </AnimatedEntranceBlock>
       </section>
       <section className="our-team--section">
-        <AnimatedEntranceBlock>
-          <div className="container">
-            <div className="section">
-              <div className="columns">
-                <div className="column is-one-third">
-                  <div className="content">
+        <div className="container">
+          <div className="section">
+            <div className="columns">
+              <div className="column is-one-third">
+                <div className="content">
+                  <AnimatedEntranceBlock>
                     <h2>{ourTeam.our_team_heading}</h2>
-                  </div>
+                  </AnimatedEntranceBlock>
                 </div>
-                <div className="column is-two-thirds">
-                  <ul className="columns is-multiline avatars">
-                    {ourTeam.avatar.map((item, index) => (
-                      <li
-                        key={index}
-                        className="column is-one-third has-text-centered"
-                      >
+              </div>
+              <div className="column is-two-thirds">
+                <ul className="columns is-multiline avatars">
+                  {ourTeam.avatar.map((item, index) => (
+                    <li
+                      key={index}
+                      className="column is-one-third has-text-centered"
+                    >
+                      <AnimatedEntranceBlock>
                         <figure className={`content item-` + index}>
                           <Img fluid={item.portrait.childImageSharp.fluid} />
                           <figcaption>{item.caption}</figcaption>
                         </figure>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                      </AnimatedEntranceBlock>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
-        </AnimatedEntranceBlock>
+        </div>
       </section>
       <section className="hero is-secondary is-clipped is-bold is-medium secondary-hero--section">
         <ParallaxHero
