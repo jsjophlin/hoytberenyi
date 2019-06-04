@@ -1,8 +1,10 @@
 $primary: #002856
 $secondary: #628d3c
+$light-gray: #d3d3d3
+$dark-gray: #828282
 
 .navbar 
-  background-color: rgba(133, 172, 174, .4)
+  background-color: $light-gray
   border-bottom: none
   transition: background-color .3s ease-in-out
   backdrop-filter: blur(10px) saturate(10%)
@@ -53,14 +55,14 @@ a.navbar-item img
 .navbar-link:not(.is-arrowless)::after
   border-color: $primary
 
-.navbar-dropdown
-  background-color: transparent
+.navbar-dropdown.is-boxed
+  border-radius: 0
 
   @media (min-width: 1024px)
-    background-color: $primary
-  
-    a
-      color: white
+    background-color: $light-gray
+    
+    > .navbar-item:first-of-type
+      border-bottom: 1px solid $dark-gray
 
 .navbar-menu
   @media (max-width: 1023px)

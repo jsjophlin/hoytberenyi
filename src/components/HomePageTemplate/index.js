@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 import Img from "gatsby-image";
+import { Link } from "gatsby";
 import ParallaxHero from "../ParallaxHero";
 import ProjectTiles from "../ProjectTiles";
 import ContactForm from "../ContactForm";
@@ -160,6 +161,15 @@ const HomePageTemplate = ({
                     project3={projects.project_3}
                     project4={projects.project_4}
                   />
+                  <p className="mt-3">
+                    <Link
+                      className="button is-primary"
+                      to="/portfolio"
+                      alt="More projects"
+                    >
+                      See more projects
+                    </Link>
+                  </p>
                 </div>
               </div>
             </div>
