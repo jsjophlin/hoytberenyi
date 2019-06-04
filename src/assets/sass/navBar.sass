@@ -55,14 +55,18 @@ a.navbar-item img
 .navbar-link:not(.is-arrowless)::after
   border-color: $primary
 
-.navbar-dropdown.is-boxed
-  border-radius: 0
+.navbar-dropdown
+  padding-top: 0
+  padding-bottom: 0
 
-  @media (min-width: 1024px)
-    background-color: $light-gray
-    
-    > .navbar-item:first-of-type
-      border-bottom: 1px solid $dark-gray
+  &.is-boxed
+    border-radius: 0
+
+    @media (min-width: 1024px)
+      background-color: $light-gray
+      
+      > .navbar-item:first-of-type
+        border-bottom: 1px solid $dark-gray
 
 .navbar-menu
   @media (max-width: 1023px)

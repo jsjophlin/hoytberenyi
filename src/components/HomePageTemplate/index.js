@@ -162,7 +162,7 @@ const HomePageTemplate = ({
                     project3={projects.project_3}
                     project4={projects.project_4}
                   />
-                  <p className="mt-3">
+                  <p className="mt-3 block--contained">
                     <Link
                       className="button is-primary"
                       to="/portfolio"
