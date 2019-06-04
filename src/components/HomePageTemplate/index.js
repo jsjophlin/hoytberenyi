@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 import Img from "gatsby-image";
 import { Link } from "gatsby";
+import { FaTwitter, FaInstagram } from "react-icons/fa";
 import ParallaxHero from "../ParallaxHero";
 import ProjectTiles from "../ProjectTiles";
 import ContactForm from "../ContactForm";
@@ -189,7 +190,22 @@ const HomePageTemplate = ({
                       please contact us at{" "}
                       <a href="tel:1-843-408-3546">843.408.3546</a>.
                     </p>
-                    <p>Social icons here...</p>
+                    <p>
+                      <a
+                        className="icon"
+                        title="twitter"
+                        href="https://twitter.com"
+                      >
+                        <FaTwitter />
+                      </a>
+                      <a
+                        className="icon"
+                        title="instagram"
+                        href="https://www.instagram.com"
+                      >
+                        <FaInstagram />
+                      </a>
+                    </p>
                     <h3>Career Opportunities</h3>
                     <p>
                       Hoyt + Berenyi is a great place to work. Please feel free

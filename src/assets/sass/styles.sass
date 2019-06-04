@@ -4,6 +4,9 @@ $secondary: #628d3c
 $primary-invert: #ffffff
 $body-color: #808888
 $content-heading-color: $primary
+$link: $secondary
+$link-hover: $primary
+$shadow: 0px 0px 10px rgba(0, 0, 0, 0.4)
 
 @import "~bulma"
 
@@ -86,3 +89,12 @@ ul,
 
 .mt-3
   margin-top: 3rem
+
+a
+  transition: .2s color ease-in-out
+
+.button.is-primary
+  transition: .2s background-color ease-in-out
+
+  &:hover
+    background-color: $secondary
