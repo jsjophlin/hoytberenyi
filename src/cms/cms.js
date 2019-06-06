@@ -3,12 +3,8 @@ import "../assets/sass/styles.sass";
 import HomePagePreview from "./preview-templates/HomePagePreview";
 import ArticlePreview from "./preview-templates/ArticlePreview";
 import ProjectsPagePreview from "./preview-templates/ProjectsPagePreview";
-import PricingPagePreview from "./preview-templates/PricingPagePreview";
-import ContactPagePreview from "./preview-templates/ContactPagePreview";
 
 CMS.registerPreviewStyle("/styles.css");
 CMS.registerPreviewTemplate("home", HomePagePreview);
 CMS.registerPreviewTemplate("projects", ProjectsPagePreview);
-CMS.registerPreviewTemplate("pricing", PricingPagePreview);
-CMS.registerPreviewTemplate("contact", ContactPagePreview);
 CMS.registerPreviewTemplate("portfolio", ArticlePreview);
