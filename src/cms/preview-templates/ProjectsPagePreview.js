@@ -9,8 +9,8 @@ const ProjectsPagePreview = ({ entry, getAsset }) => {
       meta_title={entry.getIn(["data", "meta_title"])}
       meta_description={entry.getIn(["data", "meta_description"])}
       projects={{
-        heading: entry.getIn(["data", "proects", "heading"]),
-        description: entry.getIn(["data", "proects", "description"])
+        heading: entry.getIn(["data", "projects", "heading"]),
+        description: entry.getIn(["data", "projects", "description"])
       }}
     />
   );
