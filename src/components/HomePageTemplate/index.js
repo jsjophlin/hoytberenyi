@@ -165,7 +165,7 @@ const HomePageTemplate = ({
                   <p className="mt-3 block--contained">
                     <Link
                       className="button is-primary"
-                      to="/portfolio"
+                      to="/projects"
                       alt="More projects"
                     >
                       See more projects
