@@ -306,16 +306,36 @@ collections:
               name: "meta_description",
               widget: "text",
             }
-          # - {
-          #     label: Projects,
-          #     name: projects,
-          #     widget: list,
-          #     fields:
-          #       [
-          #         { label: Heading, name: heading, widget: string },
-          #         { label: Description, name: description, widget: string },
-          #       ],
-          #   }
+          - {
+              label: "Project Section",
+              name: project_section,
+              widget: "list",
+              fields:
+                [
+                  { label: "Heading", name: heading, widget: string },
+                  { label: "Description", name: description, widget: string },
+                  {
+                    label: "Project Image",
+                    name: project_image,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Image",
+                          name: image,
+                          widget: image,
+                          optional: true,
+                        },
+                        {
+                          label: "Image alt",
+                          name: image_alt,
+                          widget: string,
+                          optional: true,
+                        },
+                      ],
+                  },
+                ],
+            }
   - name: "portfolio"
     label: "Portfolio"
     folder: "src/pages/portfolio"

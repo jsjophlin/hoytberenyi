@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 const ProjectsPageTemplate = ({
   title,
   meta_title,
-  meta_description
-  // projects
+  meta_description,
+  projects
 }) => (
   <div>
     <Helmet>
@@ -32,11 +32,10 @@ const ProjectsPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <p>Projects page content.</p>
-                {/* <h2 className="has-text-weight-semibold is-size-2">
+                <h2 className="has-text-weight-semibold is-size-2">
                   {projects.heading}
                 </h2>
-                <p className="is-size-5">{projects.description}</p> */}
+                <p className="is-size-5">{projects.description}</p>
               </div>
             </div>
           </div>
@@ -49,11 +48,11 @@ const ProjectsPageTemplate = ({
 ProjectsPageTemplate.propTypes = {
   title: PropTypes.string,
   meta_title: PropTypes.string,
-  meta_description: PropTypes.string
-  // projects: PropTypes.shape({
-  //   heading: PropTypes.string,
-  //   description: PropTypes.string
-  // })
+  meta_description: PropTypes.string,
+  projects: PropTypes.shape({
+    heading: PropTypes.string,
+    description: PropTypes.string
+  })
 };
 
 export default ProjectsPageTemplate;
