@@ -14,5 +14,10 @@ project_section:
     project_image:
       image: /img/hero_one.jpg
       image_alt: Project 1
+  - description: Project 2 description goes here.
+    heading: Project 2
+    project_image:
+      image: /img/hero_two.jpg
+      image_alt: Project 2
 ---
 
