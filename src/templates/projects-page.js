@@ -13,7 +13,7 @@ const ProjectsPage = ({ data }) => {
         title={frontmatter.title}
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
-        projects={frontmatter.projects}
+        projects={frontmatter.project_section}
       />
     </Layout>
   );
@@ -36,9 +36,13 @@ export const projectsPageQuery = graphql`
         title
         meta_title
         meta_description
-        projects {
+        project_section {
           heading
           description
+          project_image {
+            image
+            image_alt
+          }
         }
       }
     }
