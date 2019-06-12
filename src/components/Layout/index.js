@@ -17,6 +17,8 @@ class Layout extends Component {
   }
 
   render() {
+    const pageTitle = this.props.children.props.title;
+
     return (
       <Fragment>
         <Helmet>
@@ -26,6 +28,7 @@ class Layout extends Component {
         <NavBar
           isActive={this.state.isActive}
           toggleNavbar={() => this.toggleNavbar()}
+          isHome={pageTitle === "Hoyt + Berenyi" ? true : false}
         />
         <Fragment>{this.props.children}</Fragment>
         <Footer />

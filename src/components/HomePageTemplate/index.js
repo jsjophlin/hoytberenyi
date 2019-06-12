@@ -3,7 +3,6 @@ import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 import Img from "gatsby-image";
 import { Link } from "gatsby";
-import { FaTwitter, FaInstagram } from "react-icons/fa";
 import ParallaxHero from "../ParallaxHero";
 import ProjectTiles from "../ProjectTiles";
 import ContactForm from "../ContactForm";

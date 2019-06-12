@@ -3,10 +3,10 @@ import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 
 const ProjectsPageTemplate = ({
-  title,
   meta_title,
   meta_description,
-  projects
+  projects,
+  title
 }) => (
   <div>
     <Helmet>

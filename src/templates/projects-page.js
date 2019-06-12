@@ -40,7 +40,13 @@ export const projectsPageQuery = graphql`
           heading
           description
           project_image {
-            image
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1075, quality: 72) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             image_alt
           }
         }

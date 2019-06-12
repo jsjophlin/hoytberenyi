@@ -6,7 +6,7 @@ import { useTriggerOnScrolled } from "../../hooks";
 import "../../assets/sass/navBar.sass";
 import siteLogo from "../../assets/img/site_logo.png";
 
-const NavBar = ({ toggleNavbar, isActive }) => {
+const NavBar = ({ toggleNavbar, isActive, isHome }) => {
   const hidden = useTriggerOnScrolled();
 
   const logoProps = useSpring({
@@ -47,31 +47,70 @@ const NavBar = ({ toggleNavbar, isActive }) => {
         className={`navbar-menu ${isActive ? "is-active" : ""}`}
       >
         <div className="navbar-end">
-          <AnchorLink className="navbar-item" href="#home">
-            Home
-          </AnchorLink>
-          <AnchorLink className="navbar-item" href="#about-us">
-            About Us
-          </AnchorLink>
+          {isHome ? (
+            <>
+              <AnchorLink className="navbar-item" href="#home">
+                Home
+              </AnchorLink>
+              <AnchorLink className="navbar-item" href="#about-us">
+                About Us
+              </AnchorLink>
+            </>
+          ) : (
+            <>
+              <Link className="navbar-item" to="/#home">
+                Home
+              </Link>
+              <Link className="navbar-item" to="/#about-us">
+                About Us
+              </Link>
+            </>
+          )}
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link" href="#">
+            <a className="navbar-link" href="javascript:void(0);">
               Services
             </a>
             <div className="navbar-dropdown is-boxed">
-              <AnchorLink className="navbar-item" href="#our-processes">
-                Our Processes
-              </AnchorLink>
-              <AnchorLink className="navbar-item" href="#our-services">
-                Our Services
-              </AnchorLink>
+              {isHome ? (
+                <>
+                  <AnchorLink className="navbar-item" href="#our-processes">
+                    Our Processes
+                  </AnchorLink>
+                  <AnchorLink className="navbar-item" href="#our-services">
+                    Our Services
+                  </AnchorLink>
+                </>
+              ) : (
+                <>
+                  <Link className="navbar-item" to="/#our-processes">
+                    Our Processes
+                  </Link>
+                  <Link className="navbar-item" to="/#our-services">
+                    Our Services
+                  </Link>
+                </>
+              )}
             </div>
           </div>
-          <AnchorLink className="navbar-item" href="#projects">
-            Projects
-          </AnchorLink>
-          <AnchorLink className="navbar-item" href="#contact">
-            Contact
-          </AnchorLink>
+          {isHome ? (
+            <>
+              <AnchorLink className="navbar-item" href="#projects">
+                Projects
+              </AnchorLink>
+              <AnchorLink className="navbar-item" href="#contact">
+                Contact
+              </AnchorLink>
+            </>
+          ) : (
+            <>
+              <Link className="navbar-item" to="#projects">
+                Projects
+              </Link>
+              <Link className="navbar-item" to="#contact">
+                Contact
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </nav>
