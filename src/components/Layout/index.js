@@ -17,7 +17,9 @@ class Layout extends Component {
   }
 
   render() {
-    const pageTitle = this.props.children.props.title;
+    const pageTitle = this.props.children.props
+      ? this.props.children.props.title
+      : null;
 
     return (
       <Fragment>
