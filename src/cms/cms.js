@@ -6,5 +6,5 @@ import ProjectsPagePreview from "./preview-templates/ProjectsPagePreview";
 
 CMS.registerPreviewStyle("/styles.css");
 CMS.registerPreviewTemplate("home", HomePagePreview);
-CMS.registerPreviewTemplate("projects", ProjectsPagePreview);
-CMS.registerPreviewTemplate("portfolio", ArticlePreview);
+CMS.registerPreviewTemplate("our_projects", ProjectsPagePreview);
+CMS.registerPreviewTemplate("projects", ArticlePreview);

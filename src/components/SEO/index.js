@@ -32,9 +32,9 @@ const SE0 = ({ title, meta_title, meta_desc, cover, slug, date }) => {
     ]
   };
 
-  const portfolioPostingSchemaOrgJSONLD = {
+  const projectsPostingSchemaOrgJSONLD = {
     "@context": "http://schema.org",
-    "@type": "PortfolioPosting",
+    "@type": "ProjectsPosting",
     url: postURL,
     name: title,
     alternateName: config.siteTitleAlt ? config.siteTitleAlt : "",
@@ -75,7 +75,7 @@ const SE0 = ({ title, meta_title, meta_desc, cover, slug, date }) => {
         {JSON.stringify(breadcrumbSchemaOrgJSONLD)}
       </script>
       <script type="application/ld+json">
-        {JSON.stringify(portfolioPostingSchemaOrgJSONLD)}
+        {JSON.stringify(projectsPostingSchemaOrgJSONLD)}
       </script>
       {/* OpenGraph tags */}
       <meta property="og:url" content={postURL} />

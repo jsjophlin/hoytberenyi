@@ -288,9 +288,9 @@ collections:
               name: "meta_description",
               widget: "text",
             }
-      - file: "src/pages/projects/index.md"
+      - file: "src/pages/our-projects/index.md"
         label: "Projects Page"
-        name: "projects"
+        name: "our_projects"
         fields:
           - {
               label: "Template Key",
@@ -336,9 +336,9 @@ collections:
                   },
                 ],
             }
-  - name: "portfolio"
-    label: "Portfolio"
-    folder: "src/pages/portfolio"
+  - name: "projects"
+    label: "Projects"
+    folder: "src/pages/projects"
     create: true
     slug: "{{slug}}"
     fields:

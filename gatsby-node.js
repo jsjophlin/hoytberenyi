@@ -61,9 +61,9 @@ exports.createPages = ({ actions, graphql }) => {
     createPaginatedPages({
       edges: posts,
       createPage: createPage,
-      pageTemplate: "src/templates/portfolio.js",
+      pageTemplate: "src/templates/projects.js",
       pageLength: 6, // This is optional and defaults to 10 if not used
-      pathPrefix: "portfolio", // This is optional and defaults to an empty string if not used
+      pathPrefix: "projects", // This is optional and defaults to an empty string if not used
       context: {} // This is optional and defaults to an empty object if not used
     });
     postsAndPages.forEach(edge => {
