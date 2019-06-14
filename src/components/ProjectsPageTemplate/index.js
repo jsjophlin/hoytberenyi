@@ -8,7 +8,7 @@ const ProjectsPageTemplate = ({
   projects,
   title
 }) => (
-  <div>
+  <main role="main">
     <Helmet>
       <title>{meta_title}</title>
       <meta name="description" content={meta_description} />
@@ -46,7 +46,7 @@ const ProjectsPageTemplate = ({
         </div>
       </div>
     </section>
-  </div>
+  </main>
 );
 
 ProjectsPageTemplate.propTypes = {
